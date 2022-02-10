@@ -2,3 +2,12 @@ body{
     background-color: rgb(27, 33, 61);
     color: white;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hov {
+    color: white;
+}

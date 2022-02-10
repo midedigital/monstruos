@@ -83,7 +83,7 @@ const Monstruo = ({ monstruos }) => {
                     </div> 
                     }
                 </div>
-                <div className="respuestas-container">
+                <div className="mb-5 respuestas-container">
                     <span className="mt-1 title">{preguntas[question].pregunta}</span>
                     <div className="mt-3 respuestas-content">
                         {preguntas[question].respuestas.map(

@@ -1,0 +1,17 @@
+
+.main-galeria {
+    margin-top: 1em;
+    width: 50vw;
+    margin-bottom: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.galeria-monstruo {
+    border-radius: 4px;
+    padding-bottom: 100%;
+    background-color: rgb(219, 219, 219);
+    opacity: 0.75;
+    transition: all .2s ease-in-out;
+}
