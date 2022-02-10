@@ -66,7 +66,7 @@ const Monstruo = ({ monstruos }) => {
                 null
             }
             <div className="monstruo-container" style={gameOver === true || win === true ? {display: 'none'} : {display: 'block'}}>
-                {/* <h1>{monstruo.id}</h1> */}
+                <img className="monster-avatar" src={monster} alt='monstruo' />
                 <div className="pregunta-container">
                     <span>{preguntas[question].monstruo}</span>
                 </div>
