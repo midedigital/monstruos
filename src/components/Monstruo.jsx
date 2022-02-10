@@ -2,9 +2,12 @@ import { useEffect, useState } from "react"
 import './Monstruo.css'
 import heart from '../assets/heart.png'
 import monster from '../assets/monster.png'
+import { useParams } from "react-router-dom"
 
-const Monstruo = ({ monstruo }) => {
-    const preguntas = monstruo.preguntas
+const Monstruo = ({ monstruos }) => {
+    const { id } = useParams()
+    const monstruo = monstruos.filter(monstruo => monstruo.id === id)
+    const preguntas = monstruo[0].preguntas
     const [question, setQuestion] = useState(0)
     const [hearts, setHearts] = useState(2)
     const [gameOver, setGameOver] = useState(false)

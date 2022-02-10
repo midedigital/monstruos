@@ -1,10 +1,11 @@
 import monstruos from "../data/monstruos"
 import './Main.css'
 import monstruoImg from '../assets/monster.png'
+import { Link } from "react-router-dom"
 
 const Main = () => {
     return(
-        <>
+        <div className="body">
             <div className="d-flex flex-column align-items-center mt-5">
                 <div className="main-title">
                     <h1>Monstruos Financieros</h1>
@@ -27,11 +28,13 @@ const Main = () => {
                 {monstruos.map(monstruo => 
                     <div key={monstruo.id}>
                         <div className="monstruo">
-                            <img src={monstruoImg} alt="monstruo" className="monstruo-img" />
+                            <Link to={monstruo.id}>
+                                <img src={monstruoImg} alt="monstruo" className="monstruo-img" />
+                            </Link>
                         </div>
                     </div> )}
             </div>
-        </>
+        </div>
     )
 }
 
