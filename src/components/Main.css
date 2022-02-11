@@ -1,7 +1,11 @@
 
-
 .lorem {
     width: 40vw;
+}
+
+.main-logo {
+    height: 300px;
+    width: 300px;
 }
 
 .main-title {
@@ -13,7 +17,7 @@
 .elegir-monstruo {
     margin-bottom: 2em;
     font-size: 36px;
-    background-color: rgb(19, 51, 51);
+    background-color: rgb(5, 4, 39);
     padding: 1em;
     border-radius: 10px;
 }

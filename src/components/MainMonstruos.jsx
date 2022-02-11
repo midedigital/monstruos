@@ -10,8 +10,9 @@ const MainMonstruos = () => {
                 <div className="main-title">
                     <h1>Monstruos Financieros</h1>
                 </div>
-                <div className="description">
-                    <span>Selecciona a tu monstruo:</span>
+                <p className="instrucciones">Aquí podrás pelear contra tu monstruo financiero y aprender cómo puedes vencerlo.</p>
+                <div className="mt-3 description">
+                    <span>Selecciona a un monstruo para iniciar:</span>
                 </div>
             </div>
             {/* <div className="d-flex justify-content-center">

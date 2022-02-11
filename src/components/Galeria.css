@@ -1,4 +1,15 @@
 
+.galeria-bg {
+    display: flex;
+    justify-content: center;
+    background-image: url('../assets/textura-monstruos-05.png');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-clip: unset;
+}
+
 .main-galeria {
     margin-top: 1em;
     width: 50vw;

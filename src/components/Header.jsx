@@ -1,7 +1,7 @@
 import { Navbar, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Nav } from "react-bootstrap";
-import logo from '../assets/logo-monstruos2.svg'
+import logo from '../assets/logo-monstruos-fn-01.png'
 import './Header.css'
 
 const Header = () => {
@@ -20,8 +20,8 @@ const Header = () => {
                 </Navbar.Brand>
                 <Navbar.Collapse>
                     <Nav>
-                        <Nav.Link style={{ color: 'white'}}>Galeria</Nav.Link>
-                        <Nav.Link style={{ color: 'white'}}>Info</Nav.Link>
+                        <Nav.Link style={{ color: 'white'}}>Material Extra</Nav.Link>
+                        <Nav.Link style={{ color: 'white'}}>Interactivo</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

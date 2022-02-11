@@ -1,12 +1,16 @@
 
+
 .main {
-    margin-top: 2em;
+    margin-top: 3em;
     margin-left: 22%;
     width: 50vw;
-    margin-bottom: 20px;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.instrucciones {
+    margin-top: 1em;
 }
 
 .monstruo {
