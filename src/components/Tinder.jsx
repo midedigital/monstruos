@@ -41,6 +41,12 @@ const Tinder = () => {
                 } else {
                     console.log('2 pt deudas')
                 }
+            case 'compras':
+                if(direction === 'left') {
+                    console.log('something')
+                } else {
+                    console.log('no')
+                }
         }
     }
     return(
