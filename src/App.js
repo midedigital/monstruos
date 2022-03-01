@@ -5,6 +5,7 @@ import './App.css'
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Main from "./components/Main";
+import Tinder from "./components/Tinder";
 
 const App = () => {
   return( 
@@ -14,9 +15,9 @@ const App = () => {
         <Route path="/" element={<Main />} />
         <Route path="/monstruos" element={<MainMonstruos />} />
         <Route path='/monstruos/:id' element={<Monstruo monstruos={monstruos}/>} />
+        <Route path='/tinder' element={<Tinder />} />
       </Routes>
     </>
-    /* <Monstruo monstruo={monstruos[0]}/> */
   )
 }
 
