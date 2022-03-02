@@ -1,0 +1,39 @@
+.tinderCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 75vh;
+    border-radius: 20px;
+    max-width: 80vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 18px 53px 0px rgba(0,0,0,0.1);
+}
+
+.swipe {
+    position: absolute;
+}
+
+.card-text {
+    text-align: left;
+    width: 25vw;
+    padding-left: 1em;
+}
+
+.swiping {
+    display: flex;
+    margin-top: 16em;
+    font-size: 12px;
+}
+
+.left {
+    width: 15vw;
+    margin-right: 10vw;
+}
+
+.right {
+    width: 15vw;
+}
