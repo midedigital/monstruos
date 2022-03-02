@@ -1,4 +1,30 @@
-.nav-color {
-    /* background-color: #23263a; */
-    background-color: rgb(5, 4, 39);
+.header {
+    background-color: rgb(231, 177, 77);
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-bottom: 5em;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+}
+
+.ojo {
+    margin-right: 2em;
+    margin-top: 1em;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content-text {
+    width: 40vw;
+}
+
+.header-content-monstruo {
+    position: absolute;
+    right: 25em;
 }

@@ -1,0 +1,14 @@
+.jugar {
+    background: linear-gradient(110deg, #9bc7f0 50%, #ecc797 50%);
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-bottom: 5em;
+    padding-top: 5em;
+    display: flex;
+    justify-content: space-between;
+    min-height: 75vh;
+}
+
+.jugar-izq {
+    width: 25vw;
+}
