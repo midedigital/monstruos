@@ -1,6 +1,6 @@
 import monstruos from "../data/monstruos"
 import './MainMonstruos.css'
-import monstruoImg from '../assets/monster.png'
+import monstruoImg from '../assets/hero.png'
 import { Link } from "react-router-dom"
 
 const MainMonstruos = () => {

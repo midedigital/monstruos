@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import './Monstruo.css'
 import heart from '../assets/heart.png'
-import monster from '../assets/monster.png'
+import monster from '../assets/hero.png'
 import { useParams } from "react-router-dom"
 
 const Monstruo = ({ monstruos }) => {

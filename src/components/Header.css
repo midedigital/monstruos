@@ -1,5 +1,5 @@
 .header {
-    background-color: rgb(231, 177, 77);
+    background-color: rgb(250, 211, 126);
     padding-left: 10em;
     padding-right: 10em;
     padding-bottom: 5em;
@@ -7,7 +7,7 @@
 
 .menu {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .ojo {
@@ -26,5 +26,6 @@
 
 .header-content-monstruo {
     position: absolute;
-    right: 25em;
+    right: 10em;
+    top: 10em;
 }
