@@ -1,11 +1,12 @@
  const data = [
     {
         nombre: 'deudas',
-        url: 'https://picsum.photos/500',
+        url: '/images/monstruos/monstruo1.png',
         pregunta: 'Tu deuda tiene dos pagos pendientes pero este fin hay venta nocturna, tú: ',
         left: 'Aprovechas a comprar la freidora de aire que tanto querías.',
         right: 'Renuevas tu guardarropa porque hay muchas ofertas.', 
-        score: 0
+        score: 0,
+        color: 'red'
     },
     {
         nombre: 'compras',

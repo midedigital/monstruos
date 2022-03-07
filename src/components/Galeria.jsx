@@ -1,8 +1,8 @@
 import './Galeria.css'
 import Masonry from 'react-masonry-css'
+import monsters from './monsterData'
 
 const Galeria = () => {
-    const arr = [1,2,3,4,5,6,7,8,9]
     return(
         <div className='galeria'>
             <div className="galeria-text">
@@ -18,8 +18,11 @@ const Galeria = () => {
                 className="my-masonry-grid"
                 columnClassName="my-masonry-grid_column"
             >
-                {arr.map(e => 
-                    <div>{e}</div>
+                {monsters.map((e, index) => 
+                    <div style={{ backgroundColor: e.color }}>
+                        <div>{e.nombre}</div>
+                        <img src={`/images/monstruos/monstruo${index+1}.png`} alt={e.nombre} width='400px'/>
+                    </div>
                 )}
             </Masonry>
         </div>

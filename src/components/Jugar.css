@@ -3,7 +3,7 @@
     padding-left: 10em;
     padding-right: 10em;
     padding-bottom: 5em;
-    padding-top: 5em;
+    padding-top: 2em;
     display: flex;
     justify-content: space-between;
     min-height: 75vh;
@@ -11,4 +11,16 @@
 
 .jugar-izq {
     width: 25vw;
+    font-weight: bold;
+}
+
+.persona1 {
+    position: absolute;
+    margin-top: 3em;
+    margin-left: -3em;
+}
+
+.persona2 {
+    margin-top: 3em;
+    margin-right: 5em;
 }
