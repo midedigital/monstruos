@@ -1,0 +1,39 @@
+.boton-jugar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: cadetblue;
+    border-radius: 50px;
+    width: 160px;
+    height: 50px;
+    margin-top: 5em;
+    margin-left: 5em;
+    transition: all .1s ease-in-out;
+}
+
+.boton-jugar:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media only screen and (min-width: 768 px) {
+    .boton-jugar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        background-color: cadetblue;
+        border-radius: 50px;
+        width: 160px;
+        height: 50px;
+        margin-top: 2em;
+        margin-left: 5em;
+        transition: all .1s ease-in-out;
+    }
+    
+    .boton-jugar:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}

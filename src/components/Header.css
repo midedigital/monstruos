@@ -55,6 +55,7 @@
     }
     .header-content-text {
        font-size: large;
+       width: 30vw;
     }
     .header-content-monstruo {
         position: absolute;
@@ -67,7 +68,7 @@
     }
 
     .header-content-monstruo-img {
-        width: 400px;
+        width: 500px;
     }
     
     .header-logo {
