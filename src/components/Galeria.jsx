@@ -3,6 +3,12 @@ import Masonry from 'react-masonry-css'
 import monsters from './monsterData'
 
 const Galeria = () => {
+    const breakpointColumnsObj = {
+        default: 3,
+        1100: 3,
+        700: 2,
+        500: 2
+      };
     return(
         <div className='galeria'>
             <div className="galeria-text">
@@ -14,14 +20,13 @@ const Galeria = () => {
                 </span>
             </div>
             <Masonry
-                breakpointCols={3}
+                breakpointCols={breakpointColumnsObj}
                 className="my-masonry-grid"
                 columnClassName="my-masonry-grid_column"
             >
                 {monsters.map((e, index) => 
-                    <div style={{ backgroundColor: e.color }}>
-                        <div>{e.nombre}</div>
-                        <img src={`/images/monstruos/monstruo${index+1}.png`} alt={e.nombre} width='400px'/>
+                    <div style={{ backgroundColor: 'red' }}>
+                        <img src={`/images/monstruos/monstruo${index+1}.png`} alt={e.nombre} className='img-monstruo' style={index === 1 ? {paddingTop: 0} : {paddingTop: '1em'}}/>
                     </div>
                 )}
             </Masonry>

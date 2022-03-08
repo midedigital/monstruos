@@ -1,8 +1,13 @@
 .header {
     background-color: rgb(250, 211, 126);
-    padding-left: 10em;
-    padding-right: 10em;
-    padding-bottom: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+}
+
+.header-logo {
+    margin-top: -3em;
+    height: 75px;
 }
 
 .menu {
@@ -11,21 +16,61 @@
 }
 
 .ojo {
-    margin-right: 2em;
-    margin-top: 1em;
+    margin-top: 2em;
+    height: 40px;
+    object-fit: contain;
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    padding-bottom: 1em;
 }
 
 .header-content-text {
     width: 40vw;
+    font-size: small;
+    margin-top: 5em;
 }
 
 .header-content-monstruo {
     position: absolute;
-    right: 10em;
-    top: 10em;
+    right: 1em;
+    top: 15em;
+}
+
+.header-content-monstruo-img {
+    width: 250px;
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        background-color: rgb(250, 211, 126);
+        padding-left: 10em;
+        padding-right: 10em;
+        padding-bottom: 5em;
+        padding-top: 0;
+    }
+    .header-content {
+        padding: 0;
+    }
+    .header-content-text {
+       font-size: large;
+    }
+    .header-content-monstruo {
+        position: absolute;
+        right: 10em;
+        top: 15em;
+    }
+    .ojo {
+        margin-right: 2em;
+        height: 50px;
+    }
+
+    .header-content-monstruo-img {
+        width: 400px;
+    }
+    
+    .header-logo {
+        height: 150px;
+    }
 }

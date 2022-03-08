@@ -8,11 +8,11 @@ import mail from '../assets/mail.png'
 const Footer = () => {
     return(
         <div className="footer">
-            <img src={fb} alt="facebook" width={'45px'} className='mx-1' />
-            <img src={ig} alt="instagram" width={'45px'} className='mx-1' />
-            <img src={tikTok} alt="tik-tok" width={'45px'} className='mx-1' />
-            <img src={tw} alt="twitter" width={'45px'} className='mx-1' />
-            <img src={mail} alt="mail" width={'45px'} className='mx-1' />
+            <img src={fb} alt="facebook" className='logo' />
+            <img src={ig} alt="instagram" className='logo' />
+            <img src={tikTok} alt="tik-tok" className='logo' />
+            <img src={tw} alt="twitter" className='logo' />
+            <img src={mail} alt="mail" className='logo' />
         </div>
     )
 }
