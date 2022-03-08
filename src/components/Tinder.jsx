@@ -2,6 +2,7 @@ import TinderCard from "react-tinder-card"
 import { useState } from "react"
 import data from "./monsterData"
 import './Tinder.css'
+import TinderMonster from "./TinderMonster"
 
 const Tinder = () => {
     const [monstruos, setMonstruos] = useState(data)
@@ -102,8 +103,7 @@ const Tinder = () => {
     }
 
     return(
-        <div className="d-flex justify-content-center">
-            <div className="d-flex flex-row justify-content-center mt-3">
+        <div className="">
                 {data.map((monstruo, index) =>     
                     <TinderCard 
                         className="swipe"
@@ -111,7 +111,7 @@ const Tinder = () => {
                         onSwipe={(direction) => onSwipe(direction, monstruo.nombre, index)}
                         preventSwipe={['up','down']}
                     >
-                        <div style={{ backgroundImage: `url(${monstruo.url})`}} className="tinderCard">
+                        {/* <div style={{ backgroundImage: `url(${monstruo.url})`}} className="tinderCard">
                             <h3 className="p-3">{monstruo.nombre}</h3>
                             <div className="card-text">
                                 <span>{monstruo.pregunta}</span>
@@ -120,13 +120,13 @@ const Tinder = () => {
                                 <span className="left">{monstruo.left}</span>
                                 <span className="right">{monstruo.right}</span>
                             </div>
-                        </div>
+                        </div> */}
+                        <TinderMonster monster={monstruo} />
                     </TinderCard>
                 )}
                 {finished &&
                     <h1>Tu monstruo es {name}</h1>
                 }
-            </div>
         </div>
     )
 }
