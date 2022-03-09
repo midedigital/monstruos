@@ -1,8 +1,8 @@
 import './BotonJugar.css'
 
-const BotonJugar = () => {
+const BotonJugar = ({ customClass }) => {
     return(
-        <div className="boton-jugar">JUGAR</div>
+        <div className={`boton-jugar`} style={customClass}>JUGAR</div>
     )
 }
 

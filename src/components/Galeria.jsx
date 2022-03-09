@@ -12,7 +12,6 @@ const Galeria = () => {
     return(
         <div className='galeria'>
             <div className="galeria-text">
-                <h3 className='mb-4'>Lorem Impsum</h3>
                 <h6 className='mb-4'>DESCUBRE TU MONSTRUO FINANCIERO Y APRENDE</h6>
                 <span className='mb-4'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi 
                 enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
@@ -25,8 +24,8 @@ const Galeria = () => {
                 columnClassName="my-masonry-grid_column"
             >
                 {monsters.map((e, index) => 
-                    <div style={{ backgroundColor: 'red' }}>
-                        <img src={`/images/monstruos/monstruo${index+1}.png`} alt={e.nombre} className='img-monstruo' style={index === 1 ? {paddingTop: 0} : {paddingTop: '1em'}}/>
+                    <div style={{ backgroundColor: e.color }}>
+                        <img src={`/images/monstruos/monstruo${index+1}.png`} alt={e.nombre} className={e.customClass === true ? `customClass-${index} img-hover` : 'img-monstruo'} style={index === 1 ? {paddingTop: 0} : {paddingTop: '1em'}}/>
                     </div>
                 )}
             </Masonry>

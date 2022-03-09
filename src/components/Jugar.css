@@ -2,6 +2,11 @@
     display: none;
 }
 
+.jugar-der {
+    display: flex;
+    flex-direction: column;
+}
+
 .jugar-izq {
     width: 25vw;
     font-weight: bold;
@@ -17,11 +22,12 @@
 .persona2 {
     margin-top: 3em;
     margin-right: 5em;
+    object-fit: contain;
 }
 
 @media only screen and (min-width: 768px) {
     .jugar {
-        background: linear-gradient(110deg, #9bc7f0 50%, #ecc797 50%);
+        background: linear-gradient(110deg, #d3e3d6 50%, #f6c67a 50%);
         padding-left: 10em;
         padding-right: 10em;
         padding-bottom: 5em;
@@ -44,7 +50,6 @@
     }
     
     .persona2 {
-        margin-top: 3em;
-       
+        margin-top: 2em;  
     }
 }

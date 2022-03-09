@@ -103,7 +103,7 @@ const Tinder = () => {
     }
 
     return(
-        <div className="">
+        <div className="tinder">
                 {data.map((monstruo, index) =>     
                     <TinderCard 
                         className="swipe"
@@ -121,7 +121,7 @@ const Tinder = () => {
                                 <span className="right">{monstruo.right}</span>
                             </div>
                         </div> */}
-                        <TinderMonster monster={monstruo} />
+                        <TinderMonster monster={monstruo} index={index} />
                     </TinderCard>
                 )}
                 {finished &&

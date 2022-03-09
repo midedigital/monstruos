@@ -13,6 +13,12 @@
     width: 25px;
     margin-left: 0.2em;
     margin-right: 0.2em;
+    transition: all .1s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
