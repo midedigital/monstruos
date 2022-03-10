@@ -11,7 +11,7 @@ const Jugar = () => {
                 <img src={persona1} alt="persona1" height={'350px'} className='persona1' />
             </div>
             <div className='jugar-der'>
-                <BotonJugar customClass={{ marginLeft: '-2.5em', marginTop: '-0.5em'}} />
+                <BotonJugar customClass={{ marginLeft: '-2.5em', marginTop: '2em'}} />
                 <img src={persona2} alt="persona2" height={'350px'} className='persona2' />
             </div>
         </div>

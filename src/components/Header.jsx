@@ -8,7 +8,7 @@ import mide from '../assets/mide-nube.png'
 const Header = () => {
     return(
         <div className='header'>
-            <img src={mide} alt="mide" className='mide' />
+           {/*  <img src={mide} alt="mide" className='mide' /> */}
             <div className='menu'>
                 <img className='ojo' src={ojo} alt='ojo' />
             </div>
@@ -17,9 +17,10 @@ const Header = () => {
             </div>
             <div className='header-content'>
                 <div className="header-content-text">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ipsam cumque consequuntur eius ullam dolore eos, voluptas, distinctio tempore maxime accusantium alias eaque enim ad, esse explicabo doloribus dignissimos aliquid.</span>
+                    <h3 className="moonlight">¿Qué son los monstruos financieros?</h3>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nemo beatae iusto ipsa cumque quaerat expedita, quisquam hic iure quidem excepturi qui velit aliquid provident ullam. Eos recusandae dicta veniam!</span>
                     {/* <div className="header-content-boton mt-2">Jugar</div> */}
-                    <BotonJugar />
+                    {/* <BotonJugar /> */}
                 </div>
                 <div className='header-content-monstruo'>
                     <img src={hero} alt="hero" className='header-content-monstruo-img' />

@@ -12,10 +12,9 @@ const Galeria = () => {
     return(
         <div className='galeria'>
             <div className="galeria-text">
+                <h3 className="moonlight" style={{ color: 'black'}}>Galería del horror</h3>
                 <h6 className='mb-4'>DESCUBRE TU MONSTRUO FINANCIERO Y APRENDE</h6>
-                <span className='mb-4'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi 
-                enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
-                nisl ut aliquip ex ea commodo consequat. 
+                <span className='mb-4'>Toca alguno de los monstruos, identifica cuáles han estado atormentado a tus finanzas y descubre cómo puedes vencerlos.
                 </span>
             </div>
             <Masonry

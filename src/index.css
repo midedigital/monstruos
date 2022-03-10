@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Moonlight';
+    src: local('Moonlight'),
+        url('./assets/fonts/moonlight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: local('Avenir'),
+        url('./assets/fonts/avenir_ff/AvenirLTStd-Book.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Avenir-Black';
+    src: local('Avenir-Black'),
+        url('./assets/fonts/avenir_ff/AvenirLTStd-Black.otf');
+}
