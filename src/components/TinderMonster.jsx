@@ -3,7 +3,7 @@ import bubble from '../assets/bubble.svg'
 import leftArrow from '../assets/left_arrow.svg'
 import rightArrow from '../assets/right_arrow.svg'
 
-const TinderMonster = ({ monster, index }) => {
+const TinderMonster = ({ monster, index, swipe }) => {
     
     return(
         <div className='tinder-monster-card'>
@@ -14,11 +14,9 @@ const TinderMonster = ({ monster, index }) => {
                 <span className='tinder-monster-pregunta'>{monster.pregunta}</span>
             </div>
             <div className="square-1">
-                <img src={leftArrow} alt="left-arrow" className='left-arrow' />
                 <span>{monster.left}</span>
             </div>
             <div className="square-2">
-                <img src={rightArrow} alt="right-arrow" className='right-arrow' />
                 <span>{monster.right}</span>    
             </div>
         </div>

@@ -1,8 +1,11 @@
 import TinderCard from "react-tinder-card"
-import { useState } from "react"
+import { useState, useRef, useMemo } from "react"
 import data from "./monsterData"
 import './Tinder.css'
 import TinderMonster from "./TinderMonster"
+import React from "react"
+import leftArrow from '../assets/left_arrow.svg'
+import rightArrow from '../assets/right_arrow.svg'
 
 const Tinder = () => {
     const [monstruos, setMonstruos] = useState(data)
@@ -10,6 +13,22 @@ const Tinder = () => {
     const [high, setHigh] = useState(0)
     const [name, setName] = useState('')
 
+    //setup button swipe
+    const [currentIndex, setCurrentIndex] = useState(data.length - 1)
+    const [lastDirection, setLastDirection] = useState()
+    // used for outOfFrame closure
+    const currentIndexRef = useRef(currentIndex)
+    const [direction, setDirection] = useState()
+
+    const childRefs = useMemo(
+        () =>
+          Array(data.length)
+            .fill(0)
+            .map((i) => React.createRef()),
+        []
+      )
+
+    //gets high score
     const getHighest = () => {
         let temp = 0
         let tempName = ''
@@ -24,12 +43,27 @@ const Tinder = () => {
         setName(tempName)
     }
 
+    //updates score on monsters
     const updateMonstruo = (index, score) => {
         let newArr = [...monstruos]
         newArr[index].score = newArr[index].score + score
         setMonstruos(newArr)
     }
 
+    const updateCurrentIndex = (val) => {
+        setCurrentIndex(val)
+        currentIndexRef.current = val
+      }
+
+    //handle swipe
+    const handleSwipe = (direction, nombre, index) => {
+        console.log(direction, nombre, index, currentIndex)
+        onSwipe(direction, nombre, index)
+        setLastDirection(direction)
+        updateCurrentIndex(index - 1)
+    }
+
+    //method to call whenever there is a swipe
     const onSwipe = (direction, nombre, index) => {
         switch (nombre) {
             case 'deudas':
@@ -102,13 +136,21 @@ const Tinder = () => {
         }
     }
 
+    const swipe = async (dir, name, index) => {
+        onSwipe(dir, name, index)
+        if (currentIndex < data.length) {
+          await childRefs[currentIndex].current.swipe(dir) // Swipe the card!
+        }
+      }
+
     return(
         <div className="tinder">
                 {data.map((monstruo, index) =>     
                     <TinderCard 
+                        ref={childRefs[index]}
                         className="swipe"
                         key={monstruo.nombre} 
-                        onSwipe={(direction) => onSwipe(direction, monstruo.nombre, index)}
+                        onSwipe={(direction) => handleSwipe(direction, monstruo.nombre, index)}
                         preventSwipe={['up','down']}
                     >
                         {/* <div style={{ backgroundImage: `url(${monstruo.url})`}} className="tinderCard">
@@ -121,9 +163,32 @@ const Tinder = () => {
                                 <span className="right">{monstruo.right}</span>
                             </div>
                         </div> */}
-                        <TinderMonster monster={monstruo} index={index} />
+                        <TinderMonster monster={monstruo} index={index} swipe={swipe} />
                     </TinderCard>
                 )}
+                <div className={!finished ? "botones" : 'd-none'}>
+                    <div 
+                        className="boton-izq"
+                        onClick={() => swipe('left', data[currentIndex].nombre, currentIndex)} 
+                    >
+                        <img 
+                            src={leftArrow} 
+                            alt="left-arrow" 
+                            className='left-arrow' 
+                        />    
+                    </div>
+                    <div 
+                        className="boton-der"
+                        onClick={() => swipe('right', data[currentIndex].nombre, currentIndex)} 
+                    >
+                        <img 
+                            src={rightArrow} 
+                            alt="right-arrow" 
+                            className='right-arrow' 
+                        />    
+                    </div>
+                    
+                </div>
                 {finished &&
                     <h1>Tu monstruo es {name}</h1>
                 }
