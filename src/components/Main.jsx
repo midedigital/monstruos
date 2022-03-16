@@ -1,4 +1,5 @@
 import Header from './Header'
+import SubHeader from './SubHeader'
 import Galeria from './Galeria'
 import Jugar from './Jugar'
 import Footer from './Footer'
@@ -8,6 +9,7 @@ const Main = () => {
     return(
         <div>
             <Header />
+            <SubHeader />
             <Galeria />
             <Jugar />
             <Footer />

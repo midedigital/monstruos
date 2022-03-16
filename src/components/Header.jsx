@@ -4,6 +4,7 @@ import ojo from '../assets/ojo.png'
 import hero from '../assets/hero.png'
 import BotonJugar from './BotonJugar'
 import mide from '../assets/mide-nube.png'
+import lineaRoja from '../assets/linea-roja.svg'
 
 const Header = () => {
     return(
@@ -17,10 +18,12 @@ const Header = () => {
             </div>
             <div className='header-content'>
                 <div className="header-content-text">
-                    <h3 className="moonlight">¿Qué son los monstruos financieros?</h3>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nemo beatae iusto ipsa cumque quaerat expedita, quisquam hic iure quidem excepturi qui velit aliquid provident ullam. Eos recusandae dicta veniam!</span>
-                    {/* <div className="header-content-boton mt-2">Jugar</div> */}
-                    {/* <BotonJugar /> */}
+                    <img src={lineaRoja} alt="linea" className='linea-roja-header' />
+                    <h3 className="moonlight header-text">Descubre...</h3>
+                    <div className="ms-3">                    
+                        <p className='header-text-subtitle'>cómo domar a tus monstruos financieros y tomar el control de tu dinero.
+                        </p>
+                    </div>
                 </div>
                 <div className='header-content-monstruo'>
                     <img src={hero} alt="hero" className='header-content-monstruo-img' />

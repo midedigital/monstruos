@@ -6,12 +6,14 @@ import TinderMonster from "./TinderMonster"
 import React from "react"
 import leftArrow from '../assets/left_arrow.svg'
 import rightArrow from '../assets/right_arrow.svg'
+import TinderStartScreen from "./TinderStartScreen"
 
 const Tinder = () => {
     const [monstruos, setMonstruos] = useState(data)
     const [finished, setFinished] = useState(false)
     const [high, setHigh] = useState(0)
     const [name, setName] = useState('')
+    const [start, setStart] = useState(true)
 
     //setup button swipe
     const [currentIndex, setCurrentIndex] = useState(data.length - 1)
@@ -145,6 +147,11 @@ const Tinder = () => {
 
     return(
         <div className="tinder">
+            {start 
+            ? 
+                <TinderStartScreen setStart={setStart} />
+            :
+                <>
                 {data.map((monstruo, index) =>     
                     <TinderCard 
                         ref={childRefs[index]}
@@ -153,16 +160,6 @@ const Tinder = () => {
                         onSwipe={(direction) => handleSwipe(direction, monstruo.nombre, index)}
                         preventSwipe={['up','down']}
                     >
-                        {/* <div style={{ backgroundImage: `url(${monstruo.url})`}} className="tinderCard">
-                            <h3 className="p-3">{monstruo.nombre}</h3>
-                            <div className="card-text">
-                                <span>{monstruo.pregunta}</span>
-                            </div>
-                            <div className="swiping">
-                                <span className="left">{monstruo.left}</span>
-                                <span className="right">{monstruo.right}</span>
-                            </div>
-                        </div> */}
                         <TinderMonster monster={monstruo} index={index} swipe={swipe} />
                     </TinderCard>
                 )}
@@ -192,6 +189,8 @@ const Tinder = () => {
                 {finished &&
                     <h1>Tu monstruo es {name}</h1>
                 }
+                </>
+            }
         </div>
     )
 }

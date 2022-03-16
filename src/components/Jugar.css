@@ -1,28 +1,71 @@
 .jugar {
-    display: none;
+    background: linear-gradient(90deg, #d3e3d6 50%, #f6c67a 50%);
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    min-height: 30vh;
 }
 
 .jugar-der {
     display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
 .jugar-izq {
-    width: 25vw;
-    font-weight: bold;
-    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.jugar-izq-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.jugar-der-title {
+    font-size: 24px;
+    text-align: center;
+    color: black;
+}
+
+.jugar-izq-texto {
+    width: 35vw;
+    font-size: 10px;
+    text-align: center;
+}
+
+.jugar-der-texto {
+    margin-top: -5px;
+    line-height: 1;
+    width: 35vw;
+    font-size: 10px;
+    text-align: center;
+}
+
+.jugar-der-texto-title {
+    line-height: 1;
+    width: 35vw;
+    font-size: 9px;
+    text-align: center;
+}
+
+.jugar-der-texto > span {
+    margin-left: 5px;
+    font-size: 28px;
 }
 
 .persona1 {
-    position: absolute;
-    margin-top: 3em;
-    margin-left: -3em;
+    height: 75px;
 }
 
 .persona2 {
-    margin-top: 3em;
-    margin-right: 5em;
-    object-fit: contain;
+    height: 87px;
 }
 
 @media only screen and (min-width: 768px) {

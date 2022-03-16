@@ -5,15 +5,28 @@
     font-size: xx-large;
 }
 
+.header-text {
+    position: relative;
+    font-size: 52px;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    z-index: 99;
+}
+
+.header-text-subtitle {
+    text-align: left;
+    line-height: 14.4px;
+}
+
 .header {
     background-color: #F6C67A;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     padding-bottom: 2em;
 }
 
 .header-logo {
-    margin-top: -3em;
+    margin-top: -2em;
     height: 75px;
     transition: all .1s ease-in-out;
 }
@@ -23,6 +36,14 @@
     cursor: pointer;
 }
 
+.linea-roja-header {
+    position: absolute;
+    width: 180px;
+    top: 11.7em;
+    left: 0.5em;
+    z-index: 0;
+}
+
 .menu {
     display: flex;
     justify-content: flex-end;
@@ -30,8 +51,8 @@
 
 .ojo {
     margin-top: 2em;
-    margin-right: 1em;
-    height: 40px;
+    margin-right: 0em;
+    height: 30px;
     object-fit: contain;
 }
 
@@ -45,19 +66,20 @@
 }
 
 .header-content-text {
-    width: 75vw;
+    width: 40vw;
     font-size: small;
-    margin-top: 5em;
+    margin-top: 1em;
+    margin-bottom: 9em;
 }
 
 .header-content-monstruo {
     position: absolute;
     right: 0em;
-    top: 23em;
+    top: 13.5em;
 }
 
 .header-content-monstruo-img {
-    width: 175px;
+    width: 300px;
 }
 
 .mide {

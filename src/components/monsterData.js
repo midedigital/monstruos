@@ -14,7 +14,8 @@
         url: '/images/monstruos/monstruo2.png',
         pregunta: 'Revisando tus redes sociales, observas el anuncio de unos tenis de edición limitada que no tenías planeado comprar, tú:',
         score: 0,
-        color: '#d3e3d6'
+        color: '#d3e3d6', 
+        customClass: true
     },
     {
         nombre: 'impostor',
@@ -63,6 +64,7 @@
         pregunta: 'El trayecto de tu casa a tu trabajo o escuela es un poco largo, tú: ',
         score: 0,
         color: '#dac2d0',
+        customClass: true
     },
     {
         nombre: 'ultimo',
@@ -71,7 +73,8 @@
         left: 'Haces una transferencia para participar en el negocio ya que quieres dinero rápido e invitas a tres de tus conocidos',
         right: 'Rechazas la oferta, pero pides un crédito para poner tu propio negocio aunque no sabes cómo iniciar.',
         score: 0,
-        color: '#D3E3D6'
+        color: '#D3E3D6',
+        customClass: true
     },
  ]
 
