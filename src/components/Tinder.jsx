@@ -7,6 +7,7 @@ import React from "react"
 import leftArrow from '../assets/left_arrow.svg'
 import rightArrow from '../assets/right_arrow.svg'
 import TinderStartScreen from "./TinderStartScreen"
+import TinderMatch from "./TinderMatch"
 
 const Tinder = () => {
     const [monstruos, setMonstruos] = useState(data)
@@ -14,6 +15,8 @@ const Tinder = () => {
     const [high, setHigh] = useState(0)
     const [name, setName] = useState('')
     const [start, setStart] = useState(true)
+    const [counter, setCounter] = useState(1)
+    const [match, setMatch] = useState({})
 
     //setup button swipe
     const [currentIndex, setCurrentIndex] = useState(data.length - 1)
@@ -34,15 +37,18 @@ const Tinder = () => {
     const getHighest = () => {
         let temp = 0
         let tempName = ''
-        monstruos.forEach(monstruo => {
+        let tempIndex = ''
+        monstruos.forEach((monstruo, index) => {
             if(temp < monstruo.score) {
                 console.log('score is', monstruo.score)
                 temp = monstruo.score
                 tempName = monstruo.nombre
+                tempIndex = index
             }
         })
         setHigh(temp)
         setName(tempName)
+        setMatch(data[tempIndex])
     }
 
     //updates score on monsters
@@ -60,6 +66,7 @@ const Tinder = () => {
     //handle swipe
     const handleSwipe = (direction, nombre, index) => {
         console.log(direction, nombre, index, currentIndex)
+        setCounter(counter + 1)
         onSwipe(direction, nombre, index)
         setLastDirection(direction)
         updateCurrentIndex(index - 1)
@@ -160,7 +167,7 @@ const Tinder = () => {
                         onSwipe={(direction) => handleSwipe(direction, monstruo.nombre, index)}
                         preventSwipe={['up','down']}
                     >
-                        <TinderMonster monster={monstruo} index={index} swipe={swipe} />
+                        <TinderMonster monster={monstruo} index={counter} swipe={swipe} />
                     </TinderCard>
                 )}
                 <div className={!finished ? "botones" : 'd-none'}>
@@ -187,7 +194,7 @@ const Tinder = () => {
                     
                 </div>
                 {finished &&
-                    <h1>Tu monstruo es {name}</h1>
+                    <TinderMatch match={match} />
                 }
                 </>
             }

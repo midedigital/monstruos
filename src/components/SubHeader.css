@@ -9,12 +9,19 @@
 }
 
 .sub-header-monstruo {
+    position: relative;
     width: 100px;
+    z-index: 1;
 }
 
 .sub-header-text {
     margin-top: 1em;
     margin-left: 1em;
+}
+
+.sub-header-text-title {
+    position: relative;
+    z-index: 99;
 }
 
 .sub-header-text > h6 {
@@ -30,4 +37,72 @@
     font-size: 10px;
     line-height: 1;
     padding-right: 1em;
+}
+
+.sub-header-linea {
+    position: absolute;
+    width: 270px;
+    left: 5em;
+    z-index: 0;
+    top: 30.5em;
+}
+
+.sub-header-linea-desktop {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .sub-header {
+        position: relative;
+        margin-top: 2em;
+        background-color: #D3E3D6;
+        padding-top: 1em;
+        padding-left: 10em;
+        padding-right: 10em;
+        padding-bottom: 1em;
+        display: flex;
+    }
+    
+    .sub-header-monstruo {
+        position: relative;
+        width: 200px;
+        z-index: 1;
+    }
+    
+    .sub-header-text {
+        margin-top: 3em;
+        margin-left: 7em;
+    }
+    
+    .sub-header-text-title {
+        position: relative;
+        z-index: 99;
+    }
+    
+    .sub-header-text > h6 {
+        font-size: 36px;
+    }
+    
+    .sub-header-text-content {
+        width: 35vw;
+        text-align: justify;
+        text-align-last: left;
+        margin-top: 1em;
+        font-family: 'Avenir';
+        font-size: 24px;
+        line-height: 1;
+    }
+    
+    .sub-header-linea {
+        display: none;
+    }
+
+    .sub-header-linea-desktop {
+        display: inherit;
+        position: absolute;
+        width: 75%;
+        z-index: 0;
+        left: 16em;
+        top: 3em;
+    }
 }

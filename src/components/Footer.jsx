@@ -6,9 +6,9 @@ import tw from '../assets/tw.png'
 import mail from '../assets/mail.png'
 import mide from '../assets/mide-logo.svg'
 
-const Footer = () => {
+const Footer = ({ style }) => {
     return(
-        <div className="footer">
+        <div className="footer" style={style}>
             <img src={mide} alt="mide" className='mide-footer' />
             <img src={fb} alt="facebook" className='logo' />
             <img src={ig} alt="instagram" className='logo' />

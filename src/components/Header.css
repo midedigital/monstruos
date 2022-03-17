@@ -28,7 +28,6 @@
 .header-logo {
     margin-top: -2em;
     height: 75px;
-    transition: all .1s ease-in-out;
 }
 
 .header-logo:hover {
@@ -46,18 +45,13 @@
 
 .menu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .ojo {
     margin-top: 2em;
-    margin-right: 0em;
     height: 30px;
     object-fit: contain;
-}
-
-.ojo:hover {
-    cursor: pointer;
 }
 
 .header-content {
@@ -75,11 +69,11 @@
 .header-content-monstruo {
     position: absolute;
     right: 0em;
-    top: 13.5em;
+    top: 12em;
 }
 
 .header-content-monstruo-img {
-    width: 300px;
+    width: 20em;
 }
 
 .mide {
@@ -102,32 +96,60 @@
     .header {
         padding-left: 10em;
         padding-right: 10em;
-        padding-bottom: 3em;
+        padding-bottom: 1em;
         padding-top: 0;
     }
+
+    .header-text {
+        font-size: 120px;
+    }
+
+    .header-text-subtitle {
+        font-size: 24px;
+        margin-top: -3em;
+        margin-left: 0.5em;
+        text-align: left;
+        line-height: 1;
+    }
+
     .header-content {
         padding: 0;
     }
+
     .header-content-text {
        font-size: large;
-       width: 30vw;
+       width: 20vw;
     }
+
     .header-content-monstruo {
         position: absolute;
-        right: 10em;
-        top: 15em;
+        right: 3em;
+        top: 7em;
     }
     .ojo {
         margin-right: 2em;
         height: 50px;
     }
 
+    .ojo:hover {
+        cursor: pointer;
+    }
+
     .header-content-monstruo-img {
-        width: 500px;
+        position: relative;
+        width: 700px;
+        z-index: 99;
     }
     
     .header-logo {
-        height: 150px;
+        margin-top: -3em;
+        height: 125px;
+        transition: all .1s ease-in-out;
+    }
+
+    .header-logo:hover {
+        transform: scale(1.01);
+        cursor: pointer;
     }
 
     .mide {
@@ -136,5 +158,13 @@
         object-fit: contain;
         top: 5em;
         left: 7em;
+    }
+
+    .linea-roja-header {
+        position: absolute;
+        width: 340px;
+        top: 15em;
+        left: 8.5em;
+        z-index: 0;
     }
 }

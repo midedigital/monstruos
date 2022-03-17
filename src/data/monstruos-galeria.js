@@ -1,12 +1,12 @@
-import ficha1 from '../assets/monstruos-galeria/ficha-1.svg'
-import ficha2 from '../assets/monstruos-galeria/ficha-2.svg'
-import ficha3 from '../assets/monstruos-galeria/ficha-3.svg'
-import ficha4 from '../assets/monstruos-galeria/ficha-4.svg'
-import ficha5 from '../assets/monstruos-galeria/ficha-5.svg'
-import ficha6 from '../assets/monstruos-galeria/ficha-6.svg'
-import ficha7 from '../assets/monstruos-galeria/ficha-7.svg'
-import ficha8 from '../assets/monstruos-galeria/ficha-8.svg'
-import ficha9 from '../assets/monstruos-galeria/ficha-9.svg'
+import ficha1 from '../assets/monstruos-galeria-desktop/ficha-1.svg'
+import ficha2 from '../assets/monstruos-galeria-desktop/ficha-2.svg'
+import ficha3 from '../assets/monstruos-galeria-desktop/ficha-3.svg'
+import ficha4 from '../assets/monstruos-galeria-desktop/ficha-4.svg'
+import ficha5 from '../assets/monstruos-galeria-desktop/ficha-5.svg'
+import ficha6 from '../assets/monstruos-galeria-desktop/ficha-6.svg'
+import ficha7 from '../assets/monstruos-galeria-desktop/ficha-7.svg'
+import ficha8 from '../assets/monstruos-galeria-desktop/ficha-8.svg'
+import ficha9 from '../assets/monstruos-galeria-desktop/ficha-9.svg'
 
 const galeria = [
     {
@@ -16,43 +16,43 @@ const galeria = [
     },
     {
         img: ficha2,
-        nombre: 'Gasto Hormiga',
+        nombre: 'Deudas',
         customClass: false
     },
     {
         img: ficha3,
-        nombre: 'Meses',
+        nombre: 'Gasto Hormiga',
         customClass: false
     },
     {
         img: ficha4,
-        nombre: 'Estafador',
+        nombre: 'Meses',
         customClass: false
     },
     {
         img: ficha5,
-        nombre: 'Imprevistos',
+        nombre: 'Comprador Compulsivo',
         customClass: false
     },
     {
         img: ficha6,
-        nombre: 'Autosaboteador',
+        nombre: 'Adicto al crédito',
         customClass: false
     },
     {
         img: ficha7,
-        nombre: 'Adicto al creidot',
+        nombre: 'Autosaboteador',
         customClass: false
     },
     {
         img: ficha8,
-        nombre: 'Deudas ',
+        nombre: 'Imprevistos',
         customClass: false
     },
     {
         img: ficha9,
-        nombre: 'Comprador Compulsivo',
-        customClass: true
+        nombre: 'Estafador',
+        customClass: false
     },
    
 ]

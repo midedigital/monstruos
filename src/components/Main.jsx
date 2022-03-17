@@ -7,7 +7,7 @@ import './Main.css'
 
 const Main = () => {
     return(
-        <div>
+        <div className='main-app'>
             <Header />
             <SubHeader />
             <Galeria />

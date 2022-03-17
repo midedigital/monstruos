@@ -10,6 +10,7 @@
     z-index: 99;
     display: flex;
     justify-content: center;
+    overflow: scroll;
 }
 
 .modal-galeria-content {
@@ -19,5 +20,28 @@
 }
 
 .modal-cerrar {
-    width: 50px;
+    width: 30px;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+.modal-title {
+    font-size: 56px;
+}
+
+.modal-youtube {
+    margin-top: 1em;
+    width: 90vw;
+}
+
+.modal-frase {
+    margin-top: 1em;
+    width: 75vw;
+}
+
+.info {
+    margin-top: 2em;
+    width: 97vw;
+    padding-bottom: 1em;
 }

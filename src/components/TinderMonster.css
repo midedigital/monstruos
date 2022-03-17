@@ -5,31 +5,31 @@
     width: 100vw;
     background-color: #ebbdb1;
     font-size: smaller;
+    overflow: hidden;
 }
 
 .tinder-monster-img {
-    margin-left: 5em;
-    margin-top: -2em;
+    position: absolute;
+    right: 0;
+    margin-top: -5em;
     height: 200px;
     object-fit: contain;
 }
 
 .tinder-monster-pregunta {
-    margin-top: 1em;
-    width: auto;
+    width: 35vw;
 }
 
 .text-ellipse {
-    padding: 1em;
+    padding: 3em;
     display: flex;
-    flex-direction: column;
     position: absolute;
-    top: 10em;
+    top: 20em;
     border-radius: 100px;
     background-color: white;
-    width: 85vw;
-    height: 40vh;
-    box-shadow: -15px 10px 0px -2px rgba(181,181,181,0.75);
+    width: 90vw;
+    height: auto;
+    box-shadow: -15px 10px 0px -2px rgba(228, 228, 228, 0.75);
 }
 
 .square-1 {

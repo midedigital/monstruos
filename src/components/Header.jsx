@@ -5,6 +5,7 @@ import hero from '../assets/hero.png'
 import BotonJugar from './BotonJugar'
 import mide from '../assets/mide-nube.png'
 import lineaRoja from '../assets/linea-roja.svg'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return(
@@ -13,9 +14,11 @@ const Header = () => {
             <div className='menu'>
                 <img className='ojo' src={ojo} alt='ojo' />
             </div>
-            <div className="d-flex justify-content-center">
-                <img className='header-logo' src={logo} alt="logo" />
-            </div>
+            <Link to='/'>
+                <div className="d-flex justify-content-center">
+                    <img className='header-logo' src={logo} alt="logo" />
+                </div>
+            </Link>
             <div className='header-content'>
                 <div className="header-content-text">
                     <img src={lineaRoja} alt="linea" className='linea-roja-header' />

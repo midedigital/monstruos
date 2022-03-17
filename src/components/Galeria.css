@@ -125,12 +125,30 @@
     padding: 0;
 }
 
+.galeria-item-texto {
+    margin-top: 0.5em;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 10px;
+}
+
+.galeria-item-header {
+    color: black;
+    margin-bottom: -0.1em;
+}
+
+.desk {
+    display: none;
+}
+
 @media only screen and (min-width: 768px) {
     .galeria {
         padding-left: 10em;
         padding-right: 10em;
         padding-bottom: 5em;
-        padding-top: 2em;
+        padding-top: 0em;
     }
     
     .galeria-text {
@@ -138,6 +156,24 @@
         width: 61vw;
         margin-bottom: 3em;
         margin-top: 2em;
+    }
+
+    .galeria-title {
+        font-size: 96px;
+    }
+    
+    .galeria-sub-title {
+        margin-top: -1.5em;
+        margin-left: 0em;
+        font-variant: small-caps;
+        font-size: 24px;
+    }
+    
+    .galeria-text-content {
+        margin-top: 0em;
+        text-align: justify;
+        font-size: 28px;
+        line-height: 1;
     }
     
     .my-masonry-grid {
@@ -163,12 +199,18 @@
     .img-monstruo {
         width: 100%;
     }
-    
-    .img-monstruo:hover {
+
+    .galeria-item-texto {
+        display: none;
+    }
+
+    .Parent:hover > img {
+        display: block;
         border-radius: 30px;
         background-color: rgb(134, 134, 134);
-        -webkit-filter: brightness(75%);
+        -webkit-filter: brightness(25%);
         transform: scale(1.01);
+        cursor: pointer;
     }
 
     .customClass-8 {
@@ -176,4 +218,44 @@
         position: static;
         height: 100%;
     }
+
+    .movil {
+        display: none;
+    }
+
+    .Parent {
+        position: relative;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Parent:hover > .overlay {
+        opacity: 1;
+    }
+
+    .overlay{
+        opacity: 0;
+        position: absolute;
+        color: white;
+    }
+    
+    img {
+        display: block;
+    }
+
+    .overlay > span {
+        color: white;
+    }
+
+    .overlay > h1 {
+        font-size: 5em;
+        font-family: 'Moonlight';
+        color: white;
+        margin-bottom: 0;
+    }
+
+    
 }

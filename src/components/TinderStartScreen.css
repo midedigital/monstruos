@@ -1,166 +1,100 @@
 .tinder-start-screen {
     background: linear-gradient(106deg, #d3e3d6 50%, #EFC5BA 50%);
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .tinder-start-screen-logo {
     margin-top: 1.5em;
-    width: 125px;
+    width: 7em;
 }
 
 .tinder-start-screen-moonlight {
-    font-size: 79px;
+    font-size: 4em;
     color: black;
 }
 
 .tinder-start-screen-subtitle {
-    font-size: 24px;
+    font-size: 1.5em;
+}
+
+.tinder-start-screen-img-container {
+    margin-top: 1em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 55vh;
 }
 
 .burbuja-corazon {
-    width: 100px;
+    width: 7em;
     position: absolute;
-    left: 9em;
-    margin-top: 1.5em;
 }
 
 .tinder-start-screen-persona {
-    width: 90px;
+    position: absolute;
+    width: 15em;
     object-fit: contain;
-    margin-left: 5em;
-    margin-top: 8.5em;
+    top: 6em;
+    left: 4em;
 }
 
 .tinder-start-screen-monstruo {
-    width: 160px;
+    position: absolute;
+    top: 6em;
+    right: 3em;
+    width: 11em;
     object-fit: contain;
-    margin-left: 1.5em;
-    margin-top: 7.5em;
 }
 
-@media only screen and (max-width: 376px) and (max-height: 667px) {
-    .tinder-start-screen {
-        background: linear-gradient(106deg, #d3e3d6 50%, #EFC5BA 50%);
-        height: 100vh;
-    }
-    
-    .tinder-start-screen-logo {
-        margin-top: 1.5em;
-        width: 100px;
-    }
-    
-    .tinder-start-screen-moonlight {
-        font-size: 52px;
-        color: black;
-    }
-    
+.bats {
+    position: absolute;
+    width: 15em;
+    left: -4em;
+    top: -4em;
+}
+
+.hearts {
+    position: absolute;
+    width: 13em;
+    right: -3em;
+    top: -15em;
+}
+
+
+@media only screen and (max-width: 376px) {
     .tinder-start-screen-subtitle {
-        font-size: 18px;
-    }
-    
-    .burbuja-corazon {
-        width: 65px;
-        position: absolute;
-        margin-top: 0.5em;
-        left: 9em;
+        font-size: 1.2em;
     }
 
+    .burbuja-corazon {
+        width: 4em;
+        position: absolute;
+    }
+    
     .tinder-start-screen-persona {
-        width: 65px;
+        position: absolute;
+        width: 10em;
         object-fit: contain;
-        margin-left: 5em;
-        margin-top: 4.5em;
+        top: 4em;
+        left: 5em;
     }
     
     .tinder-start-screen-monstruo {
-        width: 120px;
-        object-fit: contain;
-        margin-left: 1.5em;
-        margin-top: 3.5em;
-    }
-}
-
-@media only screen and (max-width: 393px) and (min-height: 740px) {
-    .tinder-start-screen {
-        background: linear-gradient(106deg, #d3e3d6 50%, #EFC5BA 50%);
-        height: 100vh;
-    }
-    
-    .tinder-start-screen-logo {
-        margin-top: 1.5em;
-        width: 150px;
-    }
-    
-    .tinder-start-screen-moonlight {
-        font-size: 52px;
-        color: black;
-    }
-    
-    .tinder-start-screen-subtitle {
-        font-size: 18px;
-    }
-    
-    .burbuja-corazon {
-        width: 65px;
         position: absolute;
-        margin-top: 0.5em;
-        left: 10em;
+        top: 4em;
+        right: 6em;
+        width: 7em;
+        object-fit: contain;
     }
 
-    .tinder-start-screen-persona {
-        width: 90px;
-        object-fit: contain;
-        margin-left: 5em;
-        margin-top: 4.5em;
-    }
-    
-    .tinder-start-screen-monstruo {
-        width: 160px;
-        object-fit: contain;
-        margin-left: 1.5em;
-        margin-top: 3.5em;
-    }
-}
-
-/*galaxy s8+ */
-@media only screen and (max-width: 360px){
-    .tinder-start-screen {
-        background: linear-gradient(106deg, #d3e3d6 50%, #EFC5BA 50%);
-        height: 100vh;
-    }
-    
-    .tinder-start-screen-logo {
-        margin-top: 1.5em;
-        width: 100px;
-    }
-    
-    .tinder-start-screen-moonlight {
-        font-size: 52px;
-        color: black;
-    }
-    
-    .tinder-start-screen-subtitle {
-        font-size: 18px;
-    }
-    
-    .burbuja-corazon {
-        width: 65px;
-        position: absolute;
-        margin-top: 0.5em;
-        left: 9em;
-    }
-
-    .tinder-start-screen-persona {
-        width: 75px;
-        object-fit: contain;
-        margin-left: 5em;
-        margin-top: 4.5em;
-    }
-    
-    .tinder-start-screen-monstruo {
-        width: 140px;
-        object-fit: contain;
-        margin-left: 1.5em;
-        margin-top: 3.5em;
+    .tinder-start-screen-img-container {
+        margin-top: 1em;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 45vh;
     }
 }
