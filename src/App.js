@@ -4,17 +4,17 @@ import Main from "./components/Main";
 import MainMonstruos from './components/MainMonstruos'
 import Monstruo from './components/Monstruo'
 import Tinder from './components/Tinder';
+import { Router } from 'react-router-dom';
 
 const App = () => {
+  console.log(process.env.PUBLIC_URL)
   return( 
-    <>
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/monstruos" element={<MainMonstruos />} />
+    <Routes>
+        <Route path={'/'} element={<Main />} />
+        <Route path={'/monstruos'} element={<MainMonstruos />} />
       {/*   <Route path='/monstruos/:id' element={<Monstruo monstruos={monstruos}/>} /> */}
-        <Route path='/citas-monstruos' element={<Tinder />} />
-      </Routes>
-    </>
+        <Route path={'/citas-monstruos'} element={<Tinder />} />
+    </Routes>
   )
 }
 

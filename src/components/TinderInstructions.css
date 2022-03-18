@@ -20,6 +20,14 @@
     text-align: center;
 }
 
+.tinder-instructions-accent {
+    font-family: 'Moonlight';
+    font-size: 2em;
+    margin-left: 0.1em;
+    line-height: 1;
+    
+}
+
 .tinder-instructions-img {
     margin-top: 2.5em;
     margin-bottom: 1.5em;
@@ -59,4 +67,172 @@
     margin-top: 2em;
     margin-left: 3em;
     width: 70vw;
+}
+
+@media only screen and (max-width: 375px) {
+    .tinder-instructions {
+        background-color: #D3E3D6;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em;
+    }
+    
+    .tinder-instructions-text {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .tinder-instructions-content {
+        text-align: center;
+        font-size: 0.8em;
+    }
+    
+    .tinder-instructions-img {
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        width: 19em;
+    }
+    
+    .tinder-instructions-moonlight {
+        font-family: 'Moonlight';
+        font-size: 2.5em;
+    }
+    
+    .tinder-instructions-title {
+        margin-top: -1em;
+        font-size: 0.9em;
+    }
+    
+    .bloque-naranja-span {
+        font-size: 0.75em;
+        background-color: #F6C67B;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+    }
+    
+    .bloque-naranja {
+        padding: 0;
+        background-color: #F6C67B;
+        margin-top: 1em;
+        font-size: 0.75em;
+        width: 100vw;
+        height: 10em;
+        text-align: justify;
+        text-align-last: left;
+    }
+    
+    .bloque-naranja > p {
+        line-height: 1;
+        margin-top: 2em;
+        margin-left: 3em;
+        width: 70vw;
+    }
+
+    .boton-instructions {
+        height: 2em;
+        font-size: 0.8em;
+        width: 7em;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .bloque-naranja {
+        margin-top: 4em;
+    }
+
+    .boton-instructions {
+        margin-top: 3em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .tinder-instructions {
+        background: linear-gradient(145deg, #d3e3d6 50%, #EFC5BA 50%);
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .tinder-instructions-text {
+        margin-left: 3em;
+        font-size: 1.7em;
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .tinder-instructions-content {
+        text-align: center;
+    }
+    
+    .tinder-instructions-accent {
+        font-family: 'Moonlight';
+        font-size: 2em;
+        margin-left: 0.1em;
+        line-height: 1;
+        
+    }
+    
+    .tinder-instructions-img {
+        margin-top: 2em;
+        margin-left: 10em;
+        width: 30em;
+    }
+    
+    .tinder-instructions-moonlight {
+        font-family: 'Moonlight';
+        font-size: 3em;
+    }
+    
+    .tinder-instructions-title {
+        margin-top: -1em;
+    }
+    
+    .bloque-naranja-span {
+        background-color: #F6C67B;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+    }
+    
+    .bloque-naranja {
+        display: none;
+        position: absolute;
+        background-color: #F6C67B;
+        margin-top: 1.5em;
+        font-size: 1em;
+        width: 100vw;
+        height: auto;
+        text-align: justify;
+        text-align-last: left;
+        padding-bottom: 4em;
+    }
+    
+    .bloque-naranja > p {
+        line-height: 1;
+        margin-top: 2em;
+        margin-left: 3em;
+        width: 70vw;
+    }
+    
+    .boton-instructions {
+        position: absolute;
+        right: 25em;
+        bottom: 10em;
+    }
 }

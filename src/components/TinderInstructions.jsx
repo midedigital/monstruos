@@ -10,13 +10,17 @@ const TinderInstructions = ({ setStart }) => {
                 <h3 className="tinder-instructions-moonlight">Descubre</h3>
                 <span className="tinder-instructions-title">EL MONSTRUO FINANCIERO</span>
                 <span className='tinder-instructions-content'>
-                    con quien haces <span>match</span> <br /> de acuerdo a tus comportamientos y <br /> 
+                    con quien haces <span className='tinder-instructions-accent'> match</span> <br /> de acuerdo a tus comportamientos y <br /> 
                     habitos financieros <br />
                     <span className='bloque-naranja-span'>{'(y esta acechando tus finanzas)'}</span>
                 </span>
             </div>
             <img src={tinderInstructions} alt="tinder-instructions" className='tinder-instructions-img' />
-            <BotonJugar customClass={{ backgroundColor: '#F6C67B'}} onClick={() => setStart(false)} />
+            <BotonJugar 
+                customClass={{ backgroundColor: '#F6C67B'}} 
+                onClick={() => setStart(false)} 
+                customClass2={'boton-instructions'}
+            />
             <div className="bloque-naranja">
                 <p>Desliza a la izquierda o derecha con la respuesta que más te identifiques y <br /> <br />
                 ¡Descubre con quien haces <span>Match!</span></p>

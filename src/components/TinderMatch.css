@@ -12,22 +12,26 @@
 }
 
 .tinder-match-img {
-    margin-top: 2em;
-    width: 7.5em;
-    z-index: 99;
+    margin-top: 3em;
+    width: 15em;
+    z-index: 1;
 }
 
 .tinder-match-heart {
+    margin-top: 0;
     width: 5em;
 }
 
 .tinder-match-texto {
+    margin-top: 0;
+    font-size: 1.2em;
     text-align: center;
     width: 75vw;
 }
 
 .tinder-match-title {
     margin-top: 0.5em;
+    line-height: 1;
     font-family: 'Moonlight';
     font-size: 4em;
 }
@@ -49,7 +53,8 @@
 .tinder-match-botones {
     display: flex;
     flex-direction: column;
-    margin-top: 2em;
+    margin-top: 0em;
+    margin-bottom: 2em;
 }
 
 .boton-conoce {
@@ -62,4 +67,157 @@
     border-radius: 50px;
     border: 5px solid white;
     margin-top: 1em;
+}
+
+@media only screen and (max-width: 375px) {
+    .tinder-match {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 2em;
+        background-color: #D3E3D6;
+        overflow: hidden;
+        position: relative;
+        justify-content: space-evenly;
+    }
+    
+    .tinder-match-img {
+        margin-top: -1em;
+        width: 10em;
+        z-index: 1;
+    }
+    
+    .tinder-match-heart {
+        margin-top: -3em;
+        width: 3em;
+    }
+    
+    .tinder-match-texto {
+        margin-top: 0em;
+        text-align: center;
+        width: 75vw;
+        font-size: 1em;
+    }
+    
+    .tinder-match-title {
+        line-height: 1;
+        margin-top: 0em;
+        font-family: 'Moonlight';
+        font-size: 3em;
+    }
+    
+    .tinder-match-title > span {
+        font-family: 'Moonlight';
+        color: white;
+    }
+    
+    .tinder-match-circle {
+        position: absolute;
+        border-radius: 100px;
+        height: 150px;
+        width: 150px;
+        background-color: #EB566A;
+        top: 18em;
+    }
+    
+    .tinder-match-botones {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .boton-conoce {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 0.5em 0.1em 0.5em 0.1em;
+        width: 12em;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50px;
+        border: 5px solid white;
+        margin-top: 0.5em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .tinder-match {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding-left: 0em;
+        padding-right: 0em;
+        padding-top: 3em;
+        background-color: #D3E3D6;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .tinder-match-img {
+        margin-top: 2em;
+        margin-left: 10em;
+        width: 25em;
+        z-index: 1;
+    }
+    
+    .tinder-match-heart {
+        margin-top: 0;
+        width: 5em;
+    }
+
+    .tinder-match-texto-container {
+        margin-top: 1em;
+        margin-left: 13em;
+    }
+    
+    .tinder-match-texto {
+        margin-top: 0;
+        font-size: 1.2em;
+        text-align: center;
+        width: 25vw;
+    }
+    
+    .tinder-match-title {
+        margin-top: 0.5em;
+        line-height: 1;
+        font-family: 'Moonlight';
+        font-size: 4em;
+    }
+    
+    .tinder-match-title > span {
+        font-family: 'Moonlight';
+        color: white;
+    }
+    
+    .tinder-match-circle {
+        position: absolute;
+        border-radius: 500px;
+        height: 450px;
+        width: 450px;
+        background-color: #EB566A;
+        top: 3.7em;
+        right: 14.5em;
+    }
+    
+    .tinder-match-botones {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        bottom: 7em;
+        left: 17em;
+    }
+    
+    .boton-conoce {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 0.5em 0.1em 0.5em 0.1em;
+        width: 12em;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50px;
+        border: 5px solid white;
+        margin-top: 1em;
+    }
 }

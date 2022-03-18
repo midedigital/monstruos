@@ -26,6 +26,10 @@
     right: 3.7em;
 }
 
+.tinder {
+    background-color: #D3E3D6;
+}
+
 /* iphone SE */
 @media only screen and (max-width: 375px) {
     .left {

@@ -101,12 +101,12 @@
     }
 
     .header-text {
-        font-size: 120px;
+        font-size: 124px;
     }
 
     .header-text-subtitle {
-        font-size: 24px;
-        margin-top: -3em;
+        font-size: 36px;
+        margin-top: -2em;
         margin-left: 0.5em;
         text-align: left;
         line-height: 1;
@@ -118,7 +118,7 @@
 
     .header-content-text {
        font-size: large;
-       width: 20vw;
+       width: 30vw;
     }
 
     .header-content-monstruo {

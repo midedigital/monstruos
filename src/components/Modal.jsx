@@ -7,8 +7,8 @@ const Modal = ({ isOpen, closeModal, content }) => {
     return(
         <div className={isOpen ? 'modal-galeria' : 'd-none'}>
             <div className='modal-galeria-content'>
-                <h3 className='moonlight modal-title'>Monstruo</h3>
-                <span>{content.desc?.toUpperCase()}</span>
+                <h3 className='modal-title'>Monstruo</h3>
+                <span className='modal-galeria-desc'>{content.desc?.toUpperCase()}</span>
                 <br />
                 <span className='modal-frase'>{content.frase}</span>
                 <div onClick={closeModal}>

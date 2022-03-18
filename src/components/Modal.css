@@ -27,6 +27,7 @@
 }
 
 .modal-title {
+    font-family: 'Moonlight';
     font-size: 56px;
 }
 
@@ -44,4 +45,41 @@
     margin-top: 2em;
     width: 97vw;
     padding-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+    .modal-title {
+        font-family: 'Moonlight';
+
+    }
+
+    .modal-galeria {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.9);
+        z-index: 99;
+        display: flex;
+        overflow: scroll;
+    }
+    .modal-youtube {
+        min-height: 90vh;
+    }
+
+    .modal-frase {
+        margin-top: 1em;
+        font-size: 24px;
+        width: 75vw;
+    }
+
+    
+    .info {
+        margin-top: 2em;
+        width: 95vw;
+        padding-bottom: 1em;
+    }
 }

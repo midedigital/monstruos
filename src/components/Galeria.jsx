@@ -30,8 +30,8 @@ const Galeria = () => {
         <div className='galeria'>
             <div className="galeria-text">
                 <h3 className="moonlight galeria-title" style={{ color: 'black'}}>Galería del horror</h3>
-                <h6 className='mb-4 galeria-sub-title'>DETRÁS DE CADA DECISIÓN HAY UN MONSTRUO FINANCIERO.</h6>
-                <p className='mb-4 galeria-text-content'>
+                <h6 className='mb-3 galeria-sub-title'>DETRÁS DE CADA DECISIÓN HAY UN MONSTRUO FINANCIERO.</h6>
+                <p className='galeria-text-content'>
                     Toca alguno de los monstruos, identifica cuáles han estado atormentado a tus finanzas y descubre cómo puedes vencerlos.
                 </p>
             </div>

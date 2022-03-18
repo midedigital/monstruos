@@ -20,13 +20,13 @@ const TinderStartScreen = ({ setStart }) => {
         !instructions
         ?
         <div className="tinder-start-screen">
-            <div className="d-flex justify-content-center">
+            <div className="tinder-start-screen-logo-container">
                 <Link to='/'>
                     <img src={logo} alt="logo" className='tinder-start-screen-logo'/>
                 </Link>
             </div>
-            <div className="d-flex justify-content-center flex-column align-items-center mt-4">
-                <span className="moonlight tinder-start-screen-moonlight">De cita con</span>
+            <div className="tinder-start-screen-text-container">
+                <span className="tinder-start-screen-moonlight">De cita con</span>
                 <span className='tinder-start-screen-subtitle'>MI MONSTRUO FINANCIERO</span>
             </div>
             <div className='tinder-start-screen-img-container'>
@@ -41,9 +41,10 @@ const TinderStartScreen = ({ setStart }) => {
                     customClass={{marginTop: '1em', border: '3px solid pink'}}
                     onClick={() => setInstructions(true)}
                     texto='INICIAR'
+                    customClass2={'start-boton-jugar'}
                 />
             </div>
-            <Footer style={{ position: 'absolute', width: '100vw', bottom: 0}}/>
+            <Footer style={{ position: 'absolute', width: '100vw', bottom: 0}} className={'start-footer'}/>
         </div>
         :
         <TinderInstructions setStart={setStart} />

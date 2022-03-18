@@ -66,7 +66,6 @@ const Tinder = () => {
     //handle swipe
     const handleSwipe = (direction, nombre, index) => {
         console.log(direction, nombre, index, currentIndex)
-        setCounter(counter + 1)
         onSwipe(direction, nombre, index)
         setLastDirection(direction)
         updateCurrentIndex(index - 1)
@@ -74,6 +73,7 @@ const Tinder = () => {
 
     //method to call whenever there is a swipe
     const onSwipe = (direction, nombre, index) => {
+        setCounter(counter + 1)
         switch (nombre) {
             case 'deudas':
                 if(direction === 'left') {
@@ -167,7 +167,7 @@ const Tinder = () => {
                         onSwipe={(direction) => handleSwipe(direction, monstruo.nombre, index)}
                         preventSwipe={['up','down']}
                     >
-                        <TinderMonster monster={monstruo} index={counter} swipe={swipe} />
+                        <TinderMonster monster={monstruo} index={index} swipe={swipe} />
                     </TinderCard>
                 )}
                 <div className={!finished ? "botones" : 'd-none'}>

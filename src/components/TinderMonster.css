@@ -6,13 +6,14 @@
     background-color: #ebbdb1;
     font-size: smaller;
     overflow: hidden;
+    position: relative;
 }
 
 .tinder-monster-img {
     position: absolute;
-    right: 0;
-    margin-top: -5em;
-    height: 200px;
+    top: -10em;
+    left: 7.5em;
+    height: 12em;
     object-fit: contain;
 }
 
@@ -22,9 +23,8 @@
 
 .text-ellipse {
     padding: 3em;
-    display: flex;
     position: absolute;
-    top: 20em;
+    top: 25em;
     border-radius: 100px;
     background-color: white;
     width: 90vw;
@@ -59,16 +59,17 @@
 }
 
 .tinder-number {
-    width: 50px;
+    width: 100px;
     position: absolute;
-    top: 2em;
+    top: 5em;
 }
 
 .tinder-number-text {
-    font-size: large;
+    font-size: 3em;
     font-weight: bold;
     position: relative;
-    top: 1.85em;
+    top: 1.9em;
+    color: white;
 }
 
 .right-arrow {
@@ -87,9 +88,7 @@
     }
 
     .tinder-monster-img {
-        margin-left: 5em;
-        margin-top: -5em;
-        height: 200px;
+        height: 12em;
         object-fit: contain;
     }
 
@@ -98,12 +97,29 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 10em;
+        top: 20em;
         border-radius: 100px;
         background-color: white;
-        width: 85vw;
-        height: 40vh;
+        width: 90vw;
+        height: auto;
         box-shadow: -15px 10px 0px -2px rgba(181,181,181,0.75);
+    }
+
+    .tinder-number {
+        height: 5em;
+        top: 2em;
+    }
+
+    .tinder-number-text {
+        font-size: 2em;
+        font-weight: bold;
+        position: relative;
+        top: 1.2em;
+        color: white;
+    }
+
+    .tinder-monster-pregunta {
+        width: auto;
     }
 }
 
@@ -139,20 +155,21 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 10em;
+        top: 20em;
         border-radius: 100px;
         background-color: white;
         width: 40vw;
-        height: 40vh;
+        height: auto;
         box-shadow: -15px 10px 0px -2px rgba(181,181,181,0.75);
     }
     
     .square-1 {
+        background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 50%;
-        margin-bottom: 1em;
+        margin-left: 0%;
+        margin-bottom: 0em;
         border-bottom-left-radius: 10px;
         height: 30vh;
         width: 25vw;
@@ -164,8 +181,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-right: -50%;
-        margin-bottom: 1em;
+        margin-right: 0%;
+        margin-bottom: 0em;
         border-bottom-right-radius: 10px;
         height: 30vh;
         width: 25vw;
@@ -176,13 +193,15 @@
         width: 50px;
         position: absolute;
         top: 2em;
+        left: 3em;
     }
 
     .tinder-number-text {
         font-size: large;
         font-weight: bold;
-        position: relative;
-        top: 1.1em;
+        position: absolute;
+        top: 1.9em;
+        left: 3.3em;
     }
 
     .right-arrow {
