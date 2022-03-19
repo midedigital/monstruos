@@ -12,7 +12,9 @@ const Footer = ({ style, className }) => {
             <a href='https://www.mide.org.mx' target="_blank" rel="noopener noreferrer">
                 <img src={mide} alt="mide" className='mide-footer' />
             </a>
-            <img src={fb} alt="facebook" className='logo' />
+            <a href="https://www.facebook.com/museomide/" target="_blank" rel="noopener noreferrer">
+                <img src={fb} alt="facebook" className='logo' />
+            </a>
             <img src={ig} alt="instagram" className='logo' />
             <img src={tikTok} alt="tik-tok" className='logo' />
             <img src={tw} alt="twitter" className='logo' />

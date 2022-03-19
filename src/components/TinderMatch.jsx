@@ -2,6 +2,7 @@ import './TinderMatch.css'
 import heart from '../assets/heart-match.svg'
 import Footer from './Footer'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 
 const TinderMatch = ({ match }) => {
     return(
@@ -10,16 +11,22 @@ const TinderMatch = ({ match }) => {
                 <img src={heart} alt="heart" className='tinder-match-heart' />
                 <h1 className='tinder-match-title'>¡Hicieron <span>Match!</span></h1>
                 <span className='tinder-match-texto'>
-                    Ahora que sabes con que monstruo haces match puedes conocerlo más o si te sientes listo puedes ir a enfrentarlo.
+                    Ahora que sabes con qué monstruo haces match, puedes conocerlo más, o si te sientes listo, puedes ir a enfrentarlo.
                 </span>
             </div>
-            <div className="tinder-match-circle" />
+            <div className="tinder-match-circle d-none" />
             <img src={match.url} alt="match" className="tinder-match-img"/>
+            <div className='tinder-match-text-bundle'>
+                <h2 className='tinder-match-moonlight'>Monstruo</h2>
+                <h3 className='tinder-match-monster-name'>{match.match?.toUpperCase()}</h3>
+            </div>
             <div className="tinder-match-botones">
-                <Link to={'/'}>
+                <HashLink to={'/#galeria'}>
                     <div className="boton-conoce">Conoce a tu monstruo</div>
-                </Link>
-                <div className="boton-conoce">Vence a tu monstruo</div>
+                </HashLink>
+                <HashLink to={'/#juega'}>
+                    <div className="boton-conoce">Vence a tu monstruo</div>
+                </HashLink>
             </div>
             <Footer style={{ position: 'absolute', width: '100vw', bottom: 0}}/>
         </div>

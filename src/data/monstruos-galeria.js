@@ -14,6 +14,7 @@ import compulsivo from '../data/compulsivo'
 import deudas from '../data/deudas'
 import impostor from '../data/impostor'
 import meses from '../data/meses'
+import hormiga from './hormiga'
 
 const galeria = [
     {
@@ -40,7 +41,8 @@ const galeria = [
         customClass: false,
         frase: 'De poquito en poquito te hará acabarte tu dinerito.',
         desc: 'del gasto hormiga',
-        url: 'C-DwqzwucV4'
+        url: 'C-DwqzwucV4',
+        slideshow: hormiga
     },
     {
         img: ficha4,
@@ -48,7 +50,8 @@ const galeria = [
         customClass: false,
         frase: 'El desorden y las compras a largo plazo le encantan.',
         desc: 'de los MSI',
-        slideshow: meses
+        slideshow: meses,
+        url: 'kz_rwbrAa20'
     },
     {
         img: ficha5,
@@ -81,7 +84,8 @@ const galeria = [
         nombre: 'Imprevistos',
         customClass: false,
         frase: 'Pondrá trampas en el camino para poner a prueba tu capacidad de ahorro.',
-        desc: 'de los imprevistos'
+        desc: 'de los imprevistos',
+        url: 'oWSo9PFl0Yo'
     },
     {
         img: ficha9,

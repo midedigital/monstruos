@@ -7,7 +7,7 @@ import Tinder from './components/Tinder';
 import { Router } from 'react-router-dom';
 
 const App = () => {
-  console.log(process.env.PUBLIC_URL)
+  //console.log(process.env.PUBLIC_URL)
   return( 
     <Routes>
         <Route path={'/'} element={<Main />} />

@@ -12,7 +12,7 @@ const TinderInstructions = ({ setStart }) => {
                 <span className='tinder-instructions-content'>
                     con quien haces <span className='tinder-instructions-accent'> match</span> <br /> de acuerdo a tus comportamientos y <br /> 
                     habitos financieros <br />
-                    <span className='bloque-naranja-span'>{'(y esta acechando tus finanzas)'}</span>
+                    <span className='bloque-naranja-span'>{'(Y está acechando tus finanzas)'}</span>
                 </span>
             </div>
             <img src={tinderInstructions} alt="tinder-instructions" className='tinder-instructions-img' />

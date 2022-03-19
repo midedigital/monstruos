@@ -5,7 +5,7 @@ import MyGallery from './MyGallery'
 
 
 const Modal = ({ isOpen, closeModal, content }) => {
-    console.log(content.slideshow)
+    //console.log(content.slideshow)
     return(
         <div className={isOpen ? 'modal-galeria' : 'd-none'}>
             <div className='modal-galeria-content'>

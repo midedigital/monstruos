@@ -40,7 +40,7 @@ const Tinder = () => {
         let tempIndex = ''
         monstruos.forEach((monstruo, index) => {
             if(temp < monstruo.score) {
-                console.log('score is', monstruo.score)
+                //console.log('score is', monstruo.score)
                 temp = monstruo.score
                 tempName = monstruo.nombre
                 tempIndex = index
@@ -65,7 +65,7 @@ const Tinder = () => {
 
     //handle swipe
     const handleSwipe = (direction, nombre, index) => {
-        console.log(direction, nombre, index, currentIndex)
+        //console.log(direction, nombre, index, currentIndex)
         onSwipe(direction, nombre, index)
         setLastDirection(direction)
         updateCurrentIndex(index - 1)
