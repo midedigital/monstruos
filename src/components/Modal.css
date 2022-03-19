@@ -10,7 +10,7 @@
     z-index: 99;
     display: flex;
     justify-content: center;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .modal-galeria-content {
@@ -38,13 +38,23 @@
 
 .modal-frase {
     margin-top: 1em;
-    width: 75vw;
 }
 
 .info {
     margin-top: 2em;
     width: 97vw;
     padding-bottom: 1em;
+}
+
+.modal-slideshow {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+.modal-slideshow-desktop {
+    display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -80,6 +90,17 @@
     .info {
         margin-top: 2em;
         width: 95vw;
+        padding-bottom: 1em;
+    }
+    
+    .modal-slideshow {
+        display: none;
+    }
+
+    .modal-slideshow-desktop {
+        display: block;
+        margin-top: 1em;
+        margin-left: 25%;
         padding-bottom: 1em;
     }
 }

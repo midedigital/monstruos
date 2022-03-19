@@ -45,13 +45,18 @@
 
 .menu {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 .ojo {
     margin-top: 2em;
     height: 30px;
     object-fit: contain;
+}
+
+.ojoCerrado {
+    margin-top: 2.95em;
+    height: 15px;
 }
 
 .header-content {
@@ -100,6 +105,10 @@
         padding-top: 0;
     }
 
+    .menu {
+        justify-content: flex-start;
+    }
+    
     .header-text {
         font-size: 124px;
     }
@@ -132,6 +141,15 @@
     }
 
     .ojo:hover {
+        cursor: pointer;
+    }
+
+    .ojoCerrado {
+        margin-top: 3.55em;
+        height: 25px;
+    }
+
+    .ojoCerrado:hover {
         cursor: pointer;
     }
 

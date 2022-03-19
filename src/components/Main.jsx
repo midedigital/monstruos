@@ -4,10 +4,12 @@ import Galeria from './Galeria'
 import Jugar from './Jugar'
 import Footer from './Footer'
 import './Main.css'
+import MyGallery from './MyGallery'
 
 const Main = () => {
     return(
         <div className='main-app'>
+            <MyGallery />
             <Header />
             <SubHeader />
             <Galeria />

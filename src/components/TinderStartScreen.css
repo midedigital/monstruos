@@ -1,9 +1,10 @@
 .tinder-start-screen {
     background: linear-gradient(106deg, #d3e3d6 50%, #EFC5BA 50%);
     height: 100vh;
+    width: 100vw;
+    position: relative;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 .tinder-start-screen-logo-container {
@@ -80,8 +81,18 @@
     top: -15em;
 }
 
+.start-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
 
-@media only screen and (max-width: 376px) {
+.start-boton-jugar-container {
+    height: auto;
+}
+
+
+@media only screen and (max-width: 375px) {
     .tinder-start-screen-subtitle {
         font-size: 1.2em;
     }

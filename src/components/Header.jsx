@@ -6,13 +6,24 @@ import BotonJugar from './BotonJugar'
 import mide from '../assets/mide-nube.png'
 import lineaRoja from '../assets/linea-roja.svg'
 import { Link } from 'react-router-dom'
+import Menu from './Menu'
+import { useState } from 'react'
+import ojoCerrado from '../assets/ojo-cerrado.svg'
 
 const Header = () => {
+    const [menu, setMenu] = useState(false)
+
     return(
         <div className='header'>
            {/*  <img src={mide} alt="mide" className='mide' /> */}
+            <Menu menu={menu} />
             <div className='menu'>
-                <img className='ojo' src={ojo} alt='ojo' />
+                <div onClick={() => setMenu(!menu)} className={menu ? '' : 'd-none'}>
+                    <img className='ojo' src={ojo} alt='ojo' />
+                </div>
+                <div onClick={() => setMenu(!menu)} className={!menu ? '' : 'd-none'}>
+                    <img className='ojoCerrado' src={ojoCerrado} alt='ojo' />
+                </div>
             </div>
             <Link to='/'>
                 <div className="d-flex justify-content-center">

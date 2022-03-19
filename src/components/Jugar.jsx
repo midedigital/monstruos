@@ -9,7 +9,7 @@ import proximamente from '../assets/proximamente.svg'
 
 const Jugar = () => {
     return(
-        <div className='jugar'>
+        <div className='jugar' id='juega'>
             <div className='jugar-izq'>
                 <h6 className="moonlight jugar-izq-title">
                     ¿Estas listo?

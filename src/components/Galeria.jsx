@@ -27,7 +27,7 @@ const Galeria = () => {
         500: 2
       };
     return(
-        <div className='galeria'>
+        <div className='galeria' id='galeria'>
             <div className="galeria-text">
                 <h3 className="moonlight galeria-title" style={{ color: 'black'}}>Galería del horror</h3>
                 <h6 className='mb-3 galeria-sub-title'>DETRÁS DE CADA DECISIÓN HAY UN MONSTRUO FINANCIERO.</h6>
