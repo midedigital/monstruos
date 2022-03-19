@@ -15,6 +15,8 @@ import deudas from '../data/deudas'
 import impostor from '../data/impostor'
 import meses from '../data/meses'
 import hormiga from './hormiga'
+import imprevistos from './imprevistos'
+import estafador from './estafador'
 
 const galeria = [
     {
@@ -68,7 +70,8 @@ const galeria = [
         customClass: false,
         frase: 'Te hará creer que todo puedes comprarlo aunque luego, no puedas pagarlo.',
         desc: 'del crédito',
-        slideshow: credito
+        slideshow: credito,
+        url: 'U0Sx1M3MKK8'
     },
     {
         img: ficha7,
@@ -85,7 +88,8 @@ const galeria = [
         customClass: false,
         frase: 'Pondrá trampas en el camino para poner a prueba tu capacidad de ahorro.',
         desc: 'de los imprevistos',
-        url: 'oWSo9PFl0Yo'
+        url: 'oWSo9PFl0Yo',
+        slideshow: imprevistos
     },
     {
         img: ficha9,
@@ -93,7 +97,8 @@ const galeria = [
         customClass: false,
         frase: 'Te bajará la luna y las estrellas con tal de apropiarse de tu dinero.',
         desc: 'estafador',
-        url: 'ipaKoK0Rbn0'
+        url: 'ipaKoK0Rbn0',
+        slideshow: estafador
     },
    
 ]

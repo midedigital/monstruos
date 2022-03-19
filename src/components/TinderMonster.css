@@ -2,7 +2,6 @@
     height: 100vh;
     width: 100vw;
     font-size: smaller;
-    overflow: hidden;
     position: relative;
 }
 
@@ -89,6 +88,7 @@
 @media only screen and (max-width: 375px) {
     .tinder-monster-card {
         font-size: 12px;
+        overflow: hidden;
     }
 
     .tinder-monster-img {
@@ -157,6 +157,7 @@
     
     .tinder-monster-card-upper {
         display: block;
+        background-color: transparent;
     }
     
     .tinder-monster-card-lower {

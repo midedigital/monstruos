@@ -36,10 +36,9 @@ const TinderStartScreen = ({ setStart }) => {
                 <img src={persona} alt="persona" className='tinder-start-screen-persona' />
                 <img src={monstruo} alt="monstruo" className='tinder-start-screen-monstruo' />
             </div>
-            <div className="d-flex justify-content-center start-boton-jugar-container">
+            <div className="d-flex justify-content-center start-boton-jugar-container" onClick={() => setInstructions(true)}>
                 <BotonJugar 
                     customClass={{marginTop: '1em', border: '3px solid pink'}}
-                    onClick={() => setInstructions(true)}
                     texto='INICIAR'
                     customClass2={'start-boton-jugar'}
                 />

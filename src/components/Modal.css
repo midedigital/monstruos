@@ -26,6 +26,10 @@
     top: 1em;
 }
 
+.modal-cerrar:hover {
+    cursor: pointer;
+}
+
 .modal-title {
     font-family: 'Moonlight';
     font-size: 56px;

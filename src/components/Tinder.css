@@ -47,6 +47,10 @@
 
 /* iphone SE */
 @media only screen and (max-width: 375px) {
+    .tinder {
+        overflow: hidden;
+    }
+    
     .left {
         width: 15vw;
         margin-right: 10vw;
@@ -59,14 +63,14 @@
     .boton-izq {
         position: absolute;
         cursor: pointer;
-        bottom: 1em;
+        bottom: -3em;
         left: 3.7em;
     }
     
     .boton-der {
         position: absolute;
         cursor: pointer;
-        bottom: 1em;
+        bottom: -3em;
         right: 3.7em;
     }
 }

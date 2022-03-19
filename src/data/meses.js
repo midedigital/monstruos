@@ -1,4 +1,4 @@
-import meses1 from '../assets/infografias/meses/meses-01.jpg'
+import meses1 from '../assets/infografias/meses/meses-01.png'
 
 
 const meses = [
