@@ -158,7 +158,8 @@ const Tinder = () => {
             ? 
                 <TinderStartScreen setStart={setStart} />
             :
-                <>
+            <div className="tinder-container-main">
+                <div className='tinder-container'>
                 {data.map((monstruo, index) =>     
                     <TinderCard 
                         ref={childRefs[index]}
@@ -170,6 +171,10 @@ const Tinder = () => {
                         <TinderMonster monster={monstruo} index={index} swipe={swipe} />
                     </TinderCard>
                 )}
+                {finished &&
+                    <TinderMatch match={match} />
+                }
+                </div>
                 <div className={!finished ? "botones" : 'd-none'}>
                     <div 
                         className="boton-izq"
@@ -191,12 +196,8 @@ const Tinder = () => {
                             className='right-arrow' 
                         />    
                     </div>
-                    
                 </div>
-                {finished &&
-                    <TinderMatch match={match} />
-                }
-                </>
+            </div>
             }
         </div>
     )

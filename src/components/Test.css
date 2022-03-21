@@ -1,0 +1,14 @@
+.test-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.test-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 3em;
+}
+

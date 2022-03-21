@@ -1,13 +1,16 @@
 .tinder-match {
+    min-height: 100vh;
+    position: relative;
+}
+
+.tinder-match-container {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 2em;
+    justify-content: space-evenly;
     background-color: #D3E3D6;
-    position: relative;
+    padding-bottom: 3em;
 }
 
 .tinder-match-img {
@@ -17,7 +20,7 @@
 }
 
 .tinder-match-heart {
-    margin-top: 0;
+    margin-top: 1em;
     width: 4em;
 }
 
@@ -82,20 +85,14 @@
     text-align: center;
 }
 
+.tinder-match-footer {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    height: 3em;
+}
+
 @media only screen and (max-width: 375px) {
-    .tinder-match {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-left: 1em;
-        padding-right: 1em;
-        padding-top: 2em;
-        background-color: #D3E3D6;
-        position: relative;
-        justify-content: space-evenly;
-    }
-    
     .tinder-match-img {
         margin-top: 0em;
         width: 10em;
@@ -103,7 +100,7 @@
     }
     
     .tinder-match-heart {
-        margin-top: -2em;
+        margin-top: 1em;
         width: 3em;
     }
     
@@ -111,7 +108,7 @@
         margin-top: 0em;
         text-align: center;
         width: 75vw;
-        font-size: 1em;
+        font-size: 0.9em;
     }
     
     .tinder-match-title {
@@ -138,8 +135,7 @@
     .tinder-match-botones {
         display: flex;
         flex-direction: column;
-        margin-top: -1em;
-        padding-bottom: 1em;
+        margin-top: 0em;
     }
     
     .boton-conoce {
@@ -152,6 +148,8 @@
         border-radius: 50px;
         border: 5px solid white;
         margin-top: 0.5em;
+        font-size: 0.7em;
+        height: 3em;
     }
 
     .tinder-match-moonlight {
@@ -170,7 +168,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .tinder-match {
+    .tinder-match-container {
         height: 100vh;
         display: flex;
         flex-direction: row;
@@ -178,14 +176,14 @@
         padding-left: 0em;
         padding-right: 0em;
         padding-top: 3em;
+        padding-bottom: 5em;
         background-color: #D3E3D6;
         overflow: hidden;
-        position: relative;
     }
     
     .tinder-match-img {
         margin-top: -1em;
-        margin-left: 10em;
+        margin-left: 0em;
         width: 25em;
         z-index: 1;
     }
@@ -197,7 +195,7 @@
 
     .tinder-match-texto-container {
         margin-top: 1em;
-        margin-left: 13em;
+        margin-left: 0em;
     }
     
     .tinder-match-texto {
@@ -234,7 +232,7 @@
         display: flex;
         flex-direction: column;
         bottom: 7em;
-        left: 17em;
+        left: 17.5em;
     }
     
     .boton-conoce {
@@ -263,6 +261,13 @@
         position: absolute;
         text-align: center;
         bottom: 8em;
-        right: 25em;
+        right: 20em;
+    }
+
+    .tinder-match-footer {
+        position: absolute;
+        width: 100vw;
+        bottom: 0;
+        height: 5em;
     }
 }

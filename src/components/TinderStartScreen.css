@@ -1,10 +1,17 @@
-.tinder-start-screen {
-    background: linear-gradient(106deg, #d3e3d6 50%, #EFC5BA 50%);
-    height: 100vh;
-    width: 100vw;
+.tinder-start-screen-container {
     position: relative;
+    min-height: 100vh;
+    background: linear-gradient(106deg, #d3e3d6 50%, #EFC5BA 50%);
+    overflow: hidden;
+}
+
+.tinder-start-screen {
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 3em;
 }
 
 .tinder-start-screen-logo-container {
@@ -17,12 +24,10 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 1em;
 }
 
 .tinder-start-screen-logo {
     object-fit: contain;
-    margin-top: 1.5em;
     width: 7em;
     cursor: pointer;
 }
@@ -40,55 +45,28 @@
 
 .tinder-start-screen-img-container {
     margin-top: 1em;
-    position: relative;
     display: flex;
     justify-content: center;
-    height: 55vh;
 }
 
-.burbuja-corazon {
-    width: 7em;
-    position: absolute;
-}
-
-.tinder-start-screen-persona {
-    position: absolute;
-    width: 15em;
+.tinder-start-screen-hero {
     object-fit: contain;
-    top: 6em;
-    left: 4em;
-}
-
-.tinder-start-screen-monstruo {
-    position: absolute;
-    top: 6em;
-    right: 3em;
-    width: 11em;
-    object-fit: contain;
-}
-
-.bats {
-    position: absolute;
-    width: 15em;
-    left: -4em;
-    top: -4em;
-}
-
-.hearts {
-    position: absolute;
-    width: 13em;
-    right: -3em;
-    top: -15em;
+    width: 22.5em;
 }
 
 .start-footer {
     position: absolute;
     bottom: 0;
     width: 100vw;
+    height: 3em;
 }
 
-.start-boton-jugar-container {
+.tinder-start-boton-jugar-container {
+    display: flex;
+    justify-content: center;
     height: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .start-boton-jugar {
@@ -98,42 +76,25 @@
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 376px) {
+    .tinder-start-screen-logo {
+        width: 5em;
+    }
+
     .tinder-start-screen-subtitle {
         font-size: 1.2em;
     }
 
-    .burbuja-corazon {
-        width: 4em;
-        position: absolute;
-    }
-    
-    .tinder-start-screen-persona {
-        position: absolute;
-        width: 10em;
-        object-fit: contain;
-        top: 4em;
-        left: 5em;
-    }
-    
-    .tinder-start-screen-monstruo {
-        position: absolute;
-        top: 4em;
-        right: 6em;
-        width: 7em;
-        object-fit: contain;
+    .tinder-start-screen-hero {
+        width: 16em;
     }
 
-    .tinder-start-screen-img-container {
-        margin-top: 1em;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        height: 45vh;
+    .tinder-start-screen-moonlight {
+        font-size: 2.5em;
     }
 
-    .start-boton-jugar-container {
-        height: auto;
+    .tinder-start-screen-subtitle {
+        font-size: 1em;
     }
     
 }
@@ -141,28 +102,27 @@
 @media only screen and (min-width: 768px) {
     .tinder-start-screen {
         background: linear-gradient(150deg, #d3e3d6 50%, #EFC5BA 50%);
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
         overflow: hidden;
+        padding-bottom: 5em;
     }
     
     .tinder-start-screen-logo-container {
-        display: flex;
-        justify-content: start;
+        position: absolute;
+        left: 1em;
+        top: 1em;
         width: 10em;
-        padding-left: 1em;
     }
 
     .tinder-start-screen-text-container {
         display: flex;
         flex-direction: column;
-        margin-top: -5em;
+        justify-content: center;
+        margin-top: 0em;
         cursor: pointer;
     }
 
     .tinder-start-screen-logo {
-        margin-top: 1.5em;
+        margin-top: 0em;
         width: 7em;
     }
     
@@ -180,51 +140,22 @@
         position: relative;
         display: flex;
         justify-content: center;
-        height: 55vh;
     }
-    
-    .burbuja-corazon {
-        width: 7em;
+ 
+    .tinder-start-boton-jugar-container {
         position: absolute;
-    }
-    
-    .tinder-start-screen-persona {
-        position: relative;
-        width: 15em;
-        object-fit: contain;
-        top: 6em;
-        left: 4em;
-    }
-    
-    .tinder-start-screen-monstruo {
-        position: relative;
-        top: 6em;
-        right: 3em;
-        width: 10em;
-        object-fit: contain;
-    }
-    
-    .bats {
-        position: absolute;
-        width: 15em;
-        left: 25em;
-        top: -4em;
-    }
-    
-    .hearts {
-        position: absolute;
-        width: 13em;
-        right: 25em;
-        top: -15em;
-        transform: rotate(30deg);
-    }
-
-    .start-footer {
-        padding: 1em;
+        bottom: 5em;
     }
 
     .start-boton-jugar {
         margin-left: 65em;
         font-weight: bold;
+    }
+
+    .start-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        height: 5em;
     }
 }

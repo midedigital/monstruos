@@ -18,14 +18,14 @@
 
 .galeria-sub-title {
     margin-top: -0.5em;
-    margin-left: 2em;
+    margin-left: 0em;
     font-variant: small-caps;
     font-size: 10px;
 }
 
 .galeria-text-content {
     margin-top: -0.5em;
-    text-align: justify;
+    text-align: left;
     font-size: 12px;
     line-height: 12pt;
 }

@@ -3,22 +3,12 @@
     margin: 0;
 }
 
-.left {
-    width: 15vw;
-    margin-right: 10vw;
-}
-
-.right {
-    width: 15vw;
-}
-
 .botones {
-    padding: 1em;
     position: absolute;
     bottom: 0;
     display: flex;
     justify-content: space-evenly;
-    height: 15vh;
+    height: 3em;
     width: 100vw;
 }
 
@@ -41,26 +31,22 @@
 }
 
 .tinder {
+    overflow: hidden;
+}
+
+.tinder-container-main {
+    min-height: 100vh;
+    position: relative;
+}
+
+.tinder-container {
     height: 100vh;
-    width: 100vw;
+    padding-bottom: 3em;
 }
 
 /* iphone SE */
 @media only screen and (max-width: 375px) {
-    .tinder {
-        overflow: hidden;
-    }
-    
-    .left {
-        width: 15vw;
-        margin-right: 10vw;
-    }
-    
-    .right {
-        width: 15vw;
-    }
-    
-    .boton-izq {
+    /* .boton-izq {
         position: absolute;
         cursor: pointer;
         bottom: -3em;
@@ -72,7 +58,7 @@
         cursor: pointer;
         bottom: -3em;
         right: 3.7em;
-    }
+    } */
 }
 
 /* desktop */

@@ -3,6 +3,7 @@
     width: 100vw;
     font-size: smaller;
     position: relative;
+    overflow: hidden;
 }
 
 .tinder-monster-card-upper {

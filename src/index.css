@@ -24,3 +24,7 @@ a, a:hover, a:visited, a:active {
 body, html {
     overflow-x: hidden;
 }
+
+* { 
+    box-sizing: border-box;
+}
