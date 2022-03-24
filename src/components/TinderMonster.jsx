@@ -6,8 +6,9 @@ const TinderMonster = ({ monster, index, swipe }) => {
     return(
         <div className='tinder-monster-card'>
             <div className="tinder-monster-card-upper">
-                <img src={bubble} alt="tinder-number" className='tinder-number' />
-                <span className='tinder-number-text'>{9 - index}</span>
+                <div className="tinder-number" style={{ backgroundImage: `url(${bubble})`}}>
+                    <span className='tinder-number-text'>{9 - index}</span>
+                </div>
                 <div className="text-ellipse">
                     <span className='tinder-monster-pregunta'>{monster.pregunta}</span>
                     <img src={monster.url} alt="monstruo" className="tinder-monster-img" />

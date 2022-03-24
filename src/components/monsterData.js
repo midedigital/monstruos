@@ -101,7 +101,7 @@
     {
         nombre: 'ultimo',
         url: monstruo9,
-        pregunta: 'En redes sociales está de moda una invesión que genera grandes ganancias, solo necesitas invertir poco e invitar a otros amigos para que se unan, tú:',
+        pregunta: 'En redes sociales está de moda una inversión que genera grandes ganancias, solo necesitas invertir poco e invitar a otros amigos para que se unan, tú:',
         left: 'Haces una transferencia para participar en el negocio, ya que quieres dinero rápido e invitas a tres de tus conocidos.',
         right: 'Rechazas la oferta, pero pides un crédito para poner tu propio negocio, aunque no sabes cómo iniciar.',
         score: 0,

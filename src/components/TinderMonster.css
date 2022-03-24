@@ -8,7 +8,9 @@
 
 .tinder-monster-card-upper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100vw;
     height: 65vh;
     background-color: #ebbdb1;
@@ -36,8 +38,6 @@
 .text-ellipse {
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 22em;
     border-radius: 100px;
     background-color: white;
     width: 90vw;
@@ -62,82 +62,46 @@
 }
 
 .tinder-number {
-    width: 100px;
-    position: absolute;
-    top: 5em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7em;
+    height: 7em;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .tinder-number-text {
-    font-size: 3em;
+    margin-top: -0.5em;
+    font-size: 3.5em;
     font-weight: bold;
-    position: relative;
-    top: 1.9em;
     color: white;
 }
 
 .right-arrow {
-    width: 75px;
-    margin-bottom: 2em;
+    width: 3em;
 }
 
 .left-arrow {
-    width: 75px;
-    margin-bottom: 2em;
+    width: 3em;
 }
-
 
 @media only screen and (max-width: 375px) {
     .tinder-monster-card {
-        font-size: 12px;
+        font-size: 0.7em;
         overflow: hidden;
-    }
-
-    .tinder-monster-img {
-        height: 12em;
-        object-fit: contain;
     }
 
     .text-ellipse {
         padding: 1em;
-        display: flex;
-        align-items: center;
-        position: absolute;
-        top: 15em;
-        border-radius: 100px;
-        background-color: white;
-        width: 90vw;
         height: auto;
-        box-shadow: -15px 10px 0px -2px rgba(181,181,181,0.75);
-    }
-
-    .tinder-number {
-        height: 5em;
-        top: 2em;
-    }
-
-    .tinder-number-text {
-        font-size: 2em;
-        font-weight: bold;
-        position: relative;
-        top: 1.2em;
-        color: white;
-    }
-
-    .tinder-monster-pregunta {
-        width: auto;
     }
 
     .tinder-monster-card-upper {
-        display: flex;
-        justify-content: center;
-        width: 100vw;
         height: 61vh;
-        background-color: #ebbdb1;
     }
-    
     .tinder-monster-card-lower {
-        width: 100vw;
-        display: flex;
         height: 39vh;
     }
 }
@@ -234,9 +198,6 @@
     .tinder-number-text {
         font-size: large;
         font-weight: bold;
-        position: absolute;
-        top: 1.9em;
-        left: 3.3em;
     }
 
     .right-arrow {

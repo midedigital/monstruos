@@ -29,7 +29,7 @@ const Jugar = () => {
                 <span className='jugar-der-texto-title'> EL MONSTRUO FINANCIERO </span>
                 <p className='jugar-der-texto'>
                    con quien haces <span className='moonlight'>match</span><br></br>
-                   <p className='parentesis'>{'(y esta acechando tus finanzas)'}</p>
+                   <p className='parentesis'>{'(Y está acechando tus finanzas)'}</p>
                 </p>
                 <img src={persona2} alt="persona1" className='persona2' />
                 <img src={persona2Desk} alt="persona1" className='persona2Desk' />

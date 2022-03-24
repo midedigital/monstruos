@@ -8,7 +8,7 @@
     bottom: 0;
     display: flex;
     justify-content: space-evenly;
-    height: 3em;
+    height: 5em;
     width: 100vw;
 }
 
@@ -41,7 +41,7 @@
 
 .tinder-container {
     height: 100vh;
-    padding-bottom: 3em;
+    padding-bottom: 5em;
 }
 
 /* iphone SE */
