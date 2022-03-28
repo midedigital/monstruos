@@ -23,7 +23,7 @@
 }
 
 .tinder-monster-img {
-    margin-top: -3em;
+    margin-top: 0em;
     height: 12em;
 }
 
@@ -93,6 +93,18 @@
         overflow: hidden;
     }
 
+    .tinder-number {
+        width: 4.5em;
+        height: 4.5em;
+    }
+
+    .tinder-number-text {
+        margin-top: -0.5em;
+        font-size: 2em;
+        font-weight: bold;
+        color: white;
+    }
+
     .text-ellipse {
         padding: 1em;
         height: auto;
@@ -131,7 +143,7 @@
 
     .tinder-monster-img {
         margin-left: 5em;
-        margin-top: -5em;
+        margin-top: 0em;
         height: 200px;
         object-fit: contain;
     }
@@ -147,7 +159,7 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 10em;
+        top: 7em;
         left: 5em;
         border-radius: 100px;
         background-color: white;

@@ -83,11 +83,10 @@
 
 .mide {
     position: absolute;
-    width: 100px;
+    width: 65px;
     object-fit: contain;
-    top: 12em;
-    right: 1em;
-    transform: rotate(35deg);
+    top: 2em;
+    left: 1em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -171,16 +170,14 @@
     }
 
     .mide {
-        position: absolute;
-        width: 150px;
-        object-fit: contain;
-        top: 5em;
-        left: 7em;
+        width: 125px;
+        top: 1.5em;
+        left: 70em;
     }
 
     .linea-roja-header {
         position: absolute;
-        width: 340px;
+        width: 320px;
         top: 15em;
         left: 8.5em;
         z-index: 0;

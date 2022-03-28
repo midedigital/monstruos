@@ -144,7 +144,7 @@
  
     .tinder-start-boton-jugar-container {
         position: absolute;
-        bottom: 5em;
+        bottom: 7em;
     }
 
     .start-boton-jugar {
@@ -157,5 +157,6 @@
         bottom: 0;
         width: 100vw;
         height: 5em;
+        padding-bottom: 4.5em;
     }
 }

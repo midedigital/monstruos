@@ -9,9 +9,10 @@ import mide from '../assets/mide-logo.svg'
 const Footer = ({ style, className }) => {
     return(
         <div className={`footer ${className}`} style={style} >
-            <a href='https://www.mide.org.mx' target="_blank" rel="noopener noreferrer">
+            {/* <a href='https://www.mide.org.mx' target="_blank" rel="noopener noreferrer">
                 <img src={mide} alt="mide" className='mide-footer' />
-            </a>
+            </a> */}
+            <span className='footer-text'>#Monstruos Financieros</span>
             <a href="https://www.facebook.com/museomide/" target="_blank" rel="noopener noreferrer">
                 <img src={fb} alt="facebook" className='logo' />
             </a>

@@ -34,7 +34,7 @@ const Jugar = () => {
                 <img src={persona2} alt="persona1" className='persona2' />
                 <img src={persona2Desk} alt="persona1" className='persona2Desk' />
                 <Link to='citas-monstruos'>
-                    <div className='boton-jugar azul'>JUGAR</div>
+                    <div className='azul'>JUGAR</div>
                 </Link>
             </div>
         </div>

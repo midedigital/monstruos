@@ -2,8 +2,7 @@ import './Header.css'
 import logo from '../assets/logo.svg'
 import ojo from '../assets/ojo.png'
 import hero from '../assets/hero.png'
-import BotonJugar from './BotonJugar'
-import mide from '../assets/mide-nube.png'
+import mide from '../assets/mide-logo.svg'
 import lineaRoja from '../assets/linea-roja.svg'
 import { Link } from 'react-router-dom'
 import Menu from './Menu'
@@ -15,7 +14,6 @@ const Header = () => {
 
     return(
         <div className='header'>
-           {/*  <img src={mide} alt="mide" className='mide' /> */}
             <Menu menu={menu} />
             <div className='menu'>
                 <div onClick={() => setMenu(!menu)} className={menu ? '' : 'd-none'}>
@@ -30,6 +28,7 @@ const Header = () => {
                     <img className='header-logo' src={logo} alt="logo" />
                 </div>
             </Link>
+            <img src={mide} alt="mide" className='mide' />
             <div className='header-content'>
                 <div className="header-content-text">
                     <img src={lineaRoja} alt="linea" className='linea-roja-header' />

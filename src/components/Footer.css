@@ -8,6 +8,7 @@
     justify-content: flex-end;
     padding-top: 0.5em;
     width: 100vw;
+    position: relative;
 }
 
 .logo {
@@ -22,6 +23,15 @@
     left: 1em;
 }
 
+.footer-text {
+    font-family: 'Moonlight';
+    font-size: 1.75em;
+    line-height: 1;
+    position: absolute;
+    left: 0.25em;
+    top: 0.3em;
+}
+
 
 @media only screen and (min-width: 768px) {
     .footer {
@@ -31,6 +41,8 @@
         display: flex;
         justify-content: flex-end;
         padding-top: 1em;
+        position: relative;
+        padding-right: 2em;
     }
     
     .logo {
@@ -47,6 +59,12 @@
         width: 100px;
         position: absolute;
         left: 1em;
+    }
+  
+    .footer-text {
+        font-size: 5em;
+        left: 0.1em;
+        top: 0.1em;
     }
 }
 

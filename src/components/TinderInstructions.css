@@ -149,6 +149,7 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
+        padding-bottom: 5em;
     }
     
     .tinder-instructions-text {
@@ -221,5 +222,10 @@
         right: 25em;
         bottom: 10em;
         margin-bottom: 0;
+    }
+
+    .tinder-instructions-footer {
+        height: 5em;
+        padding-bottom: 4.5em;
     }
 }
