@@ -16,10 +16,10 @@ const TinderMatch = ({ match }) => {
                     </span>
                 </div>
                 <div className="tinder-match-circle d-none" />
-                <img src={match.url} alt="match" className="tinder-match-img"/>
+                <img src={match.url2} alt="match" className="tinder-match-img"/>
                 <div className='tinder-match-text-bundle'>
-                    <h2 className='tinder-match-moonlight'>Monstruo</h2>
-                    <h3 className='tinder-match-monster-name'>{match.match?.toUpperCase()}</h3>
+                    {/* <h2 className='tinder-match-moonlight'>Monstruo</h2> */}
+                    {/* <h3 className='tinder-match-monster-name'>{match.match?.toUpperCase()}</h3> */}
                 </div>
                 <div className="tinder-match-botones">
                     <HashLink to={'/#galeria'}>

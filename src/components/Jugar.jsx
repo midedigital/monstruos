@@ -6,14 +6,19 @@ import persona2Desk from '../assets/jugar-der-desk.svg'
 import BotonJugar from './BotonJugar'
 import { Link } from 'react-router-dom'
 import proximamente from '../assets/proximamente.svg'
+import lineaAmarilla from '../assets/linea-amarilla.svg'
+import estasAhi from '../assets/estasAhi.svg'
+import match from '../assets/match.svg'
 
 const Jugar = () => {
     return(
         <div className='jugar' id='juega'>
             <div className='jugar-izq'>
+                {/* <img src={lineaAmarilla} alt='linea amarilla' className='linea-amarilla' />
                 <h6 className="moonlight jugar-izq-title">
                     ¿Estas listo?
-                </h6>
+                </h6> */}
+                <img src={estasAhi} alt="estas listo?" className='estas-listo'/>
                 <p className='jugar-izq-texto'>
                     ¡Pon en juego tus hábitos y <br></br> enfrenta a tus monstruos <br></br>financieros!
                 </p>
@@ -31,6 +36,7 @@ const Jugar = () => {
                    con quien haces <span className='moonlight'>match</span><br></br>
                    <p className='parentesis'>{'(Y está acechando tus finanzas)'}</p>
                 </p>
+                {/* <img src={match} alt="texto" className='match-texto'/> */}
                 <img src={persona2} alt="persona1" className='persona2' />
                 <img src={persona2Desk} alt="persona1" className='persona2Desk' />
                 <Link to='citas-monstruos'>

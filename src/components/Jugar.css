@@ -110,8 +110,24 @@
 .proximamente {
     width: 10em;
     position: absolute;
-    top: 5em;
+    top: 9em;
     left: 1em;
+}
+
+.linea-amarilla {
+    width: 7em;
+    top: 1.25em;
+    left: 0.5em;
+    position: absolute;
+    z-index: -1;
+}
+
+.estas-listo {
+    margin-bottom: 1em;
+}
+
+.match-texto {
+    margin-bottom: 1em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -152,6 +168,7 @@
     }
 
     .jugar-der {
+        margin-left: 6em;
         margin-top: 5em;
         display: flex;
         flex-direction: column;
@@ -227,7 +244,26 @@
     .proximamente {
         width: 25em;
         position: absolute;
-        top: 10em;
+        top: 17em;
         left: 9em;
+    }
+
+    .linea-amarilla {
+        width: 19em;
+        position: absolute;
+        top: 6em;
+        left: 1em;
+        z-index: -1;
+    }
+
+    .estas-listo {
+        margin-left: -1em;
+        width: 25em;
+        margin-bottom: 3em;
+    }
+
+    .match-texto {
+        width: 30em;
+        margin-left: 6em;
     }
 }

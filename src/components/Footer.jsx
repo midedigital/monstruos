@@ -4,7 +4,6 @@ import ig from '../assets/ig.png'
 import tikTok from '../assets/tik-tok.png'
 import tw from '../assets/tw.png'
 import mail from '../assets/mail.png'
-import mide from '../assets/mide-logo.svg'
 
 const Footer = ({ style, className }) => {
     return(

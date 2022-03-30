@@ -29,8 +29,6 @@
 }
 
 .sub-header-text-content {
-    text-align: justify;
-    text-align-last: left;
     width: 195px;
     margin-top: 2em;
     font-family: 'Avenir';
@@ -85,8 +83,6 @@
     
     .sub-header-text-content {
         width: 35vw;
-        text-align: justify;
-        text-align-last: left;
         margin-top: 1em;
         font-family: 'Avenir';
         font-size: 24px;

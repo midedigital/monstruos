@@ -95,7 +95,7 @@
 @media only screen and (max-width: 375px) {
     .tinder-match-img {
         margin-top: 0em;
-        width: 10em;
+        width: 13em;
         z-index: 1;
     }
     
@@ -182,7 +182,7 @@
     }
     
     .tinder-match-img {
-        margin-top: -1em;
+        margin-top: 2em;
         margin-left: 0em;
         width: 25em;
         z-index: 1;
